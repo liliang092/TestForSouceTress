@@ -24,9 +24,13 @@
     [self initView];
     
 
-//    [self initView];
+    [self initView];
     NSLog(@"测试提交信息是否更改");
+//<<<<<<< HEAD
     NSLog(@"测试提交信息是否更改2");
+//=======
+    NSLog(@"测试提交信息是否更改1");
+//>>>>>>> TestForBrash1
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)initView
