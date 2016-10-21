@@ -30,6 +30,8 @@
     NSLog(@"测试提交信息是否更改2");
 //=======
     NSLog(@"测试提交信息是否更改1");
+    
+    NSLog(@"测试提交信息是否更改3");
 //>>>>>>> TestForBrash1
     // Do any additional setup after loading the view, typically from a nib.
 }
