@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/push.js"></script><script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":6,"applicationTime":394,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=p(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function l(e,t){g[e]=p(e).concat(t)}function p(e){return g[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",m[n]=t,t in f||(f[t]=[])})}var g={},m={},w={on:l,emit:n,get:d,listeners:p,context:t,buffer:v};return w}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},l=t.exports=o();l.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(m,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=s.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document,l="addEventListener",p="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-984.min.js"},w=d&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[l]?(s[l]("DOMContentLoaded",i,!1),f[l]("load",r,!1)):(s[p]("onreadystatechange",o),f[p]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime现在IT届流行一个词叫“黑科技”，泛指一些让人“不明觉厉的”新技术或新产品，那在iOS开发中有什么高大上的“黑科技”呢？runtime中的MethodSwizzling当仁不让，它是一把双刃剑，高手耍起来威力无限，菜鸟耍起来则可能伤及自身。对于这样的黑科技，我们当然要掌握并努力驾驭之。什么是MethodSwizzlingMethodSwizzling（貌似没有很正式的中文名，下文使用暴力的中文来代替：方法交换），顾名思义，就是将两个方法的实现交换，即由原来的A－AIm...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/3efc3e94b14c">
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3211098">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="iOS runtime实战应用：Method Swizzling" property="twitter:title">
+  <meta content="前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime现在IT届流行一个词叫“黑科技”，泛指一些让人“不明觉厉的”新技术或新产品，那在iOS开发中有什么高大上的“黑科技”呢？runtime中的MethodSwizzling当仁不让，它是一把双刃剑，高手耍起来威力无限，菜鸟耍起来则可能伤及自身。对于这样的黑科技，我们当然要掌握并努力驾驭之。什么是MethodSwizzlingMethodSwizzling（貌似没有很正式的中文名，下文使用暴力的中文来代替：方法交换），顾名思义，就是将两个方法的实现交换，即由原来的A－AIm..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/3efc3e94b14c" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="iOS runtime实战应用：Method Swizzling">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/3efc3e94b14c">
+  <meta property="og:description" content="前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime现在IT届流行一个词叫“黑科技”，泛指一些让人“不明觉厉的”新技术或新产品，那在iOS开发中有什么高大上的“...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/3211098">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/3211098">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+  <title>iOS runtime实战应用：Method Swizzling - 简书</title>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="2Zu+0+YZQUtwvsyqFpltyYxsVKu7+luR8em5SmE5WWOzsPc4z13YlLVQZ7qrLuWNbrq5e0PzvzXVgmJ+fNy04g==">
+  <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" media="all" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/base-28859e35d389885d08837bc971ff742c.css">
+
+    <link rel="stylesheet" media="all" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/reading-note-cb4c7fc3074ff1cb9e73649e96817782.css">
+  <link rel="stylesheet" media="all" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/base-read-mode-64acccf6966299cfa3d580140a2582fe.css">
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/modernizr-613ea63b5aa2f0e2a1946e9c28c8eedb.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if IE 8]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <link href="http://baijii-common.b0.upaiyun.com/icons/favicon.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-b426758a1fcfb30486f20fd073c3b8ec.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-feca4b183b9d29fd188665785dc7a7f1.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-ba757f1ad3421192ce7192170393d2b0.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/114-8dae53b3bcea3f06bb139e329d1edab3.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-fa315ee0177dba4c55d4f66d4129b47f.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-052f5799bec8fb3aa624bdc72ef5bd1d.png" sizes="152x152">
+
+<style type="text/css"></style></head>
+
+<body class="post output zh cn mac mozilla reader-day-mode reader-font2" data-js-module="note-show" data-locale="zh-CN">
+  
+  <div style="" class="navbar navbar-jianshu shrink hide-wrap-btn">
+  <div class="dropdown">
+    <a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">
+      简
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li><a href="http://www.jianshu.com/"><i class="fa fa-home"></i> 首页</a></li>
+      <li><a href="http://www.jianshu.com/collections"><i class="fa fa-th"></i> 专题</a></li>
+      <li><a href="http://www.jianshu.com/user_invitations"><i class="fa fa-money"></i> 发钱啦</a></li>
+    </ul>
+  </div>
+</div>
+<div class="navbar-user">
+    <a class="login" data-signup-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_up">
+      <i class="fa fa-user"></i> 注册
+</a>    <a class="login" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+      <i class="fa fa-sign-in"></i> 登录
+</a>    <a class="daytime set-view-mode pull-right" href="javascript:void(0)"><i class="fa fa-moon-o"></i></a>
+</div>
+<div class="navbar navbar-jianshu expanded">
+  <div class="dropdown">
+      <a class="active logo" role="button" data-original-title="个人主页" data-container="div.expanded" href="http://www.jianshu.com/">
+        <b>简</b><i class="fa fa-home"></i><span class="title">首页</span>
+</a>      <a data-toggle="tooltip" data-placement="right" data-original-title="专题" data-container="div.expanded" href="http://www.jianshu.com/collections">
+        <i class="fa fa-th"></i><span class="title">专题</span>
+</a>    <a class="ad-selector" href="http://www.jianshu.com/apps">
+      <i class="fa fa-mobile"></i><span class="title">下载手机应用</span>
+</a>    <div class="ad-container ">
+      <div class="ad-pop">
+        <img class="ad-logo" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/114-8dae53b3bcea3f06bb139e329d1edab3.png" alt="114">
+        <p class="ad-title">简书</p>
+        <p class="ad-subtitle">交流故事，沟通想法</p>
+        <img class="ad-qrcode" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode">
+        <div>
+          <a class="ad-link" href="https://itunes.apple.com/cn/app/jian-shu/id888237539?ls=1&amp;mt=8">iOS</a>·
+          <a class="ad-link" href="http://downloads.jianshu.io/apps/haruki/JianShu-1.11.2.apk">Android</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="nav-user">
+      <a href="#view-mode-modal" data-toggle="modal"><i class="fa fa-font"></i><span class="title">显示模式</span></a>
+
+      <a class="signin" data-signin-link="true" data-toggle="modal" data-placement="right" data-original-title="登录" data-container="div.expanded" href="http://www.jianshu.com/sign_in">
+        <i class="fa fa-sign-in"></i><span class="title">登录</span>
+</a>    </div>
+  </div>
+
+  
+    <div class="fixed-btn">
+    <a class="go-top" href="#"> <i class="fa fa-angle-up"></i></a>
+    <a class="qrcode" data-target="#bottom-qrcode" data-toggle="modal" href="javascript:void(0)"><i class="fa fa-qrcode"></i></a>
+    <a data-original-title="写篇文章" class="writer" href="http://www.jianshu.com/writer#/" data-toggle="tooltip" data-placement="left" title=""><i class="fa fa-pencil"></i></a>
+    <!-- qrcode modal -->
+    <div id="bottom-qrcode" class="modal panel-modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <h4>下载简书移动应用</h4>
+      <div class="panel-body"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode"></div>
+    </div>
+  </div>
+
+
+  <div id="show-note-container">
+    
+<div class="post-bg" id="flag">
+  <div style="top: -1px;" class="wrap-btn hide-wrap-btn">
+    <!-- Notebook and collections button upper left -->
+      <div class="article-related pull-left">
+          <a class="collection-menu-btn" data-toggle="modal" data-target="#collection-menu" href="javascript:void(null);">
+            <i class="fa fa-th"></i>
+</a>          <a class="notebooks-menu-btn" data-toggle="modal" data-target="#notebooks-menu" href="javascript:void(null);"><i class="fa fa-list-ul"></i></a>
+        <div class="related-avatar-group activities"></div>
+      </div>
+    <!-- ******* -->
+
+      <a class="login" data-signup-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_up">
+    <i class="fa fa-user"></i> 注册
+</a>  <a class="login" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+    <i class="fa fa-sign-in"></i> 登录
+</a>
+
+    <!-- Buttons upper right -->
+    <!-- ******* -->
+  </div>
+
+  <div class="container">
+    <!-- Article activities for width under 768px -->
+    <div class="related-avatar-group activities"></div>
+      <div class="article">
+        <div class="preview">
+          <div class="author-info">
+              <div class="btn btn-small btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-plus"></i>  <span>添加关注</span></a>
+  </div>
+
+            <a class="avatar" href="http://www.jianshu.com/users/d1ea95326c8c">
+              <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/82362aeb7447.gif" alt="100">
+</a>            <span class="label">
+                作者
+            </span>
+            <a class="author-name blue-link" href="http://www.jianshu.com/users/d1ea95326c8c">
+              <span>明仔Su</span>
+</a>              <span>2016.03.17 19:54</span>
+            <div>
+              <span>写了35383字</span>，<span>被1170人关注</span>，<span>获得了964个喜欢</span>
+            </div>
+          </div>
+          <h1 class="title">iOS runtime实战应用：Method Swizzling</h1>
+          <div class="meta-top">
+            <span class="wordage">字数1952</span>
+            <span class="views-count">阅读1882</span>
+            <span class="comments-count">评论6</span>
+            <span class="likes-count">喜欢45</span>
+          </div>
+
+          <!-- Collection/Bookmark/Share for width under 768px -->
+          <div class="article-share"><a class="bookmark" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"> <i class="fa fa-bookmark-o"></i><span>收藏文章</span></a><span> <a href="javascript:void(null)" data-toggle="dropdown"><i class="fa fa-share-square-o"></i> 分享</a> <ul class="dropdown-menu arrow-top"> <li> <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1881139527',u=z||d.location,p=['&amp;url=',e(u),'&amp;title=',e(t||d.title),'&amp;source=',e(r),'&amp;sourceUrl=',e(l),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','http://cwb.assets.jianshu.io/notes/images/3211098/weibo/image_6e9b3bcf335e.jpg',%20'%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@%E7%AE%80%E4%B9%A6%20%EF%BC%89','http://www.jianshu.com/p/3efc3e94b14c','%E9%A1%B5%E9%9D%A2%E7%BC%96%E7%A0%81gb2312|utf-8%E9%BB%98%E8%AE%A4gb2312'));"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/weibo.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;title='+e('iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling')+'&amp;sel='+e(s)+'&amp;v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&amp;r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/douban.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshuio%20%EF%BC%89'),x=function(){if(!window.open(r,'tweibo','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/tweibo.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B'),x=function(){if(!window.open(r,'qzone','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/qzone.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://twitter.com/share?url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;text='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshucom%20%EF%BC%89')+'&amp;related='+e('jianshucom'),x=function(){if(!window.open(r,'twitter','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/twitter.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/3efc3e94b14c',x=function(){if(!window.open(r,'facebook','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/facebook.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://plus.google.com/share?url='+e('http://www.jianshu.com/p/3efc3e94b14c'),x=function(){if(!window.open(r,'google_plus','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/google_plus.png"> </a> </li> <li> <a href=""> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/renren.png"> </a> </li> </ul></span></div>
+          <!-- -->
+
+          <div class="show-content"><h4>前言</h4>
+<p>在开始之前建议先阅读iOS runtime的基础理解篇：<a href="http://www.jianshu.com/p/f493bc6a949e/comments/1688988#comment-1688988" target="_blank">iOS内功篇：runtime</a></p>
+<p>现在IT届流行一个词叫“黑科技”，泛指一些让人“不明觉厉的”新技术或新产品，那在iOS开发中有什么高大上的“黑科技”呢？runtime中的
+Method 
+Swizzling当仁不让，它是一把双刃剑，高手耍起来威力无限，菜鸟耍起来则可能伤及自身。对于这样的黑科技，我们当然要掌握并努力驾驭之。</p>
+<h4>什么是Method Swizzling</h4>
+<p>Method Swizzling（貌似没有很正式的中文名，下文使用暴力的中文来代替：方法交换），顾名思义，就是将两个方法的实现交换，即由原来的A－AImp、B－BImp对应关系变成了A－BImp、B－AImp。</p>
+<p>那为什么无缘无故要将两个方法的实现交换呢？</p>
+<p>1、hook：在开发中，经常用到系统提供的API，但出于某些需求，我们可能会对某些方法的实现不太满意，就想去修改它以达到更好的效
+果，Hook由此诞生。iOS开发会使用Method 
+Swizzling来达到这样的效果：当特定的消息发出时，会先到达我们提前预置的消息处理函数，取得控制权来加工消息以及后续处理。</p>
+<p>2、面向切面编程：实际上，要改变一个方法的实现有几种方法，比如继承重写、分类重写等等，但在开发中，往往由于业务需要需要在代码中添加一些琐碎的、跟主要业务逻辑无关的东西，使用这两者都有局限性，使用方法交换动态給指定的方法添加代码以达到解耦的效果。</p>
+<h4>Method Swizzling原理</h4>
+<p>每个类都维护一个方法（Method）列表，Method则包含SEL和其对应IMP的信息，方法交换做的事情就是把SEL和IMP的对应关系断开，并和新的IMP生成对应关系。</p>
+<p>交换前：Asel－&gt;AImp     Bsel－&gt;BImp<br>交换后：Asel－&gt;BImp     Bsel－&gt;AImp</p>
+<h4>Method Swizzling相关函数介绍</h4>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//获取通过SEL获取一个方法</span>
+class_getInstanceMethod</code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//获取一个方法的实现</span>
+method_getImplementation</code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//获取一个OC实现的编码类型</span>
+method_getTypeEncoding</code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//給方法添加实现</span>
+class_addMethod</code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//用一个方法的实现替换另一个方法的实现</span>
+class_replaceMethod</code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//交换两个方法的实现</span>
+method_exchangeImplementations</code></pre>
+<h4>Method Swizzling实现的过程</h4>
+<pre class="hljs lisp"><code class="lisp">    static dispatch_once_t onceToken<span class="hljs-comment">;</span>
+    dispatch_once<span class="hljs-list">(<span class="hljs-keyword">&amp;onceToken</span>, ^{
+        //case1: 替换实例方法
+        Class selfClass = [self class]<span class="hljs-comment">;</span>
+        //case2: 替换类方法
+        Class selfClass = object_getClass<span class="hljs-list">([self class])</span><span class="hljs-comment">;</span>
+
+        //源方法的SEL和Method
+        SEL oriSEL = @selector<span class="hljs-list">(<span class="hljs-keyword">viewWillAppear</span>:)</span><span class="hljs-comment">;</span>
+        Method oriMethod = class_getInstanceMethod<span class="hljs-list">(<span class="hljs-keyword">selfClass</span>, oriSEL)</span><span class="hljs-comment">;</span>
+
+        //交换方法的SEL和Method
+        SEL cusSEL = @selector<span class="hljs-list">(<span class="hljs-keyword">customViewWillApper</span>:)</span><span class="hljs-comment">;</span>
+        Method cusMethod = class_getInstanceMethod<span class="hljs-list">(<span class="hljs-keyword">selfClass</span>, cusSEL)</span><span class="hljs-comment">;</span>
+
+        //先尝试給源方法添加实现，这里是为了避免源方法没有实现的情况
+        BOOL addSucc = class_addMethod<span class="hljs-list">(<span class="hljs-keyword">selfClass</span>, oriSEL, method_getImplementation<span class="hljs-list">(<span class="hljs-keyword">cusMethod</span>)</span>, method_getTypeEncoding<span class="hljs-list">(<span class="hljs-keyword">cusMethod</span>)</span>)</span><span class="hljs-comment">;</span>
+        if <span class="hljs-list">(<span class="hljs-keyword">addSucc</span>)</span> {
+            //添加成功：将源方法的实现替换到交换方法的实现
+            class_replaceMethod<span class="hljs-list">(<span class="hljs-keyword">selfClass</span>, cusSEL, method_getImplementation<span class="hljs-list">(<span class="hljs-keyword">oriMethod</span>)</span>, method_getTypeEncoding<span class="hljs-list">(<span class="hljs-keyword">oriMethod</span>)</span>)</span><span class="hljs-comment">;</span>
+        }else {
+            //添加失败：说明源方法已经有实现，直接将两个方法的实现交换即可
+            method_exchangeImplementations<span class="hljs-list">(<span class="hljs-keyword">oriMethod</span>, cusMethod)</span><span class="hljs-comment">;</span>
+        }
+    })</span><span class="hljs-comment">;</span></code></pre>
+<h4>Method Swizzling注意事项</h4>
+<p>1、方法交换应该保证唯一性和原子性<br>唯一性：应该尽可能在＋load方法中实现，这样可以保证方法一定会调用且不会出现异常。<br>原子性：使用dispatch_once来执行方法交换，这样可以保证只运行一次。</p>
+<p>2、一定要调用原始实现<br>由于iOS的内部实现对我们来说是不可见的，使用方法交换可能会导致其代码结构改变，而对系统产生其他影响，因此应该调用原始实现来保证内部操作的正常运行。</p>
+<p>3、方法名必须不能产生冲突<br>这个是常识，避免跟其他库产生冲突。</p>
+<p>4、做好记录<br>记录好被影响过的方法，不然时间长了或者其他人debug代码时候可能会对一些输出信息感到困惑。</p>
+<p>5、如果非迫不得已，尽量少用方法交换<br>虽然方法交换可以让我们高效地解决问题，但是如果处理不好，可能会导致一些莫名其妙的bug。</p>
+<h4>Method Swizzling应用实例</h4>
+<p>1、hook: 給全局图片名称添加前缀<br>想象这样一个场景，你所负责的项目下个版本需要更换所有图标，然而你拿到新的图片资源比旧图片多了一个前缀“new_”，你可以一个个去改标题，当然也可以抖机灵地使用下面这个方法。</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">UIImage</span> (<span class="hljs-title">Hook</span>)</span>
+
++ (<span class="hljs-keyword">void</span>)load {
+
+    <span class="hljs-keyword">static</span> <span class="hljs-built_in">dispatch_once_t</span> onceToken;
+    <span class="hljs-built_in">dispatch_once</span>(&amp;onceToken, ^{
+
+        Class selfClass = object_getClass([<span class="hljs-keyword">self</span> class]);
+
+        SEL oriSEL = <span class="hljs-keyword">@selector</span>(imageNamed:);
+        Method oriMethod = class_getInstanceMethod(selfClass, oriSEL);
+
+        SEL cusSEL = <span class="hljs-keyword">@selector</span>(myImageNamed:);
+        Method cusMethod = class_getInstanceMethod(selfClass, cusSEL);
+
+        <span class="hljs-built_in">BOOL</span> addSucc = class_addMethod(selfClass, oriSEL, method_getImplementation(cusMethod), method_getTypeEncoding(cusMethod));
+        <span class="hljs-keyword">if</span> (addSucc) {
+            class_replaceMethod(selfClass, cusSEL, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+        }<span class="hljs-keyword">else</span> {
+            method_exchangeImplementations(oriMethod, cusMethod);
+        }
+
+    });
+}
+
++ (<span class="hljs-built_in">UIImage</span> *)myImageNamed:(<span class="hljs-built_in">NSString</span> *)name {
+
+    <span class="hljs-built_in">NSString</span> * newName = [<span class="hljs-built_in">NSString</span> stringWithFormat:<span class="hljs-string">@"%@%@"</span>, <span class="hljs-string">@"new_"</span>, name];
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> myImageNamed:newName];
+}
+
+<span class="hljs-keyword">@end</span></code></pre>
+<p>流程分析：<br>1、在+load方法中将imageNamed和myImageNamed的实现交换了，现在的状态变成了<br>imageNamed -&gt; myImageNamed(IMP)<br>myImageNamed -&gt; imageNamed(IMP)</p>
+<p>2、当用户调用imageNamed时，其实现是myImageNamed(IMP)，在例子中的代码就是：</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-built_in">NSString</span> * newName = [<span class="hljs-built_in">NSString</span> stringWithFormat:<span class="hljs-string">@"%@%@"</span>, <span class="hljs-string">@"new_"</span>, name];
+<span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> myImageNamed:newName];</code></pre>
+<p>3、代码中对图片名称做了处理，加上前缀。</p>
+<p>4、代码调用了[self myImageNamed:newName]，看起来会陷入死循环，但其实myImageNamed的实现已经是imageNamed(IMP)，因此该调用相当于调用系统原来的生成图片的实现。</p>
+<p>5、一句话总结：方法交换之后，“方法的实现” 变成了 “你的处理代码” ＋ “方法的实现”</p>
+<p>结果：<br>当调用设置图片的方法时</p>
+<pre class="hljs objectivec"><code class="objectivec">imgV<span class="hljs-variable">.image</span> = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@"home_icon"</span>];</code></pre>
+<p>实际上相当于自动給图片名称加了前缀</p>
+<pre class="hljs objectivec"><code class="objectivec">imgV<span class="hljs-variable">.image</span> = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@"new_home_icon"</span>];</code></pre>
+<p>2、面向切面编程: 数据统计<br>想象这样一个场景，出于某些需求，我们需要跟踪记录APP中按钮的点击次数和频率等数据，怎么解决？当然通过
+继承按钮类或者通过类别实现是一个办法，但是带来其他问题比如别人不一定会去实例化你写的子类，或者其他类别也实现了点击方法导致不确定会调用哪一个，抖
+机灵的方法如下：</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">UIButton</span> (<span class="hljs-title">Hook</span>)</span>
+
++ (<span class="hljs-keyword">void</span>)load {
+
+    <span class="hljs-keyword">static</span> <span class="hljs-built_in">dispatch_once_t</span> onceToken;
+    <span class="hljs-built_in">dispatch_once</span>(&amp;onceToken, ^{
+
+        Class selfClass = [<span class="hljs-keyword">self</span> class];
+
+        SEL oriSEL = <span class="hljs-keyword">@selector</span>(sendAction:to:forEvent:);
+        Method oriMethod = class_getInstanceMethod(selfClass, oriSEL);
+
+        SEL cusSEL = <span class="hljs-keyword">@selector</span>(mySendAction:to:forEvent:);
+        Method cusMethod = class_getInstanceMethod(selfClass, cusSEL);
+
+        <span class="hljs-built_in">BOOL</span> addSucc = class_addMethod(selfClass, oriSEL, method_getImplementation(cusMethod), method_getTypeEncoding(cusMethod));
+        <span class="hljs-keyword">if</span> (addSucc) {
+            class_replaceMethod(selfClass, cusSEL, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+        }<span class="hljs-keyword">else</span> {
+            method_exchangeImplementations(oriMethod, cusMethod);
+        }
+
+    });
+}
+
+- (<span class="hljs-keyword">void</span>)mySendAction:(SEL)action to:(<span class="hljs-keyword">id</span>)target forEvent:(<span class="hljs-built_in">UIEvent</span> *)event {
+    [CountTool addClickCount];
+    [<span class="hljs-keyword">self</span> mySendAction:action to:target forEvent:event];
+}
+
+<span class="hljs-keyword">@end</span></code></pre>
+<p>这里只是举了一两个小例子，更多用法读者可以深入理解这两种编程思维，举一反三。</p>
+<h4>Method Swizzling方法封装</h4>
+<p>细心的读者已经发现了，这个方法交换的代码好像变化不大，如果多处应用的话显得有些冗余，强迫症绝对不能接受，是的，必须将其封装之。</p>
+<pre class="hljs scala"><code class="scala">+ (void)swizzleMethods:(<span class="hljs-type">Class</span>)<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">originalSelector</span>:</span>(<span class="hljs-type">SEL</span>)origSel swizzledSelector:(<span class="hljs-type">SEL</span>)swizSel {
+
+    <span class="hljs-type">Method</span> origMethod = class_getInstanceMethod(<span class="hljs-class"><span class="hljs-keyword">class</span>, <span class="hljs-title">origSel</span>);</span>
+    <span class="hljs-type">Method</span> swizMethod = class_getInstanceMethod(<span class="hljs-class"><span class="hljs-keyword">class</span>, <span class="hljs-title">swizSel</span>);</span>
+
+    <span class="hljs-type">BOOL</span> didAddMethod = class_addMethod(<span class="hljs-class"><span class="hljs-keyword">class</span>, <span class="hljs-title">origSel</span>, <span class="hljs-title">method_getImplementation</span>(</span>swizMethod), method_getTypeEncoding(swizMethod));
+    <span class="hljs-keyword">if</span> (didAddMethod) {
+        class_replaceMethod(<span class="hljs-class"><span class="hljs-keyword">class</span>, <span class="hljs-title">swizSel</span>, <span class="hljs-title">method_getImplementation</span>(</span>origMethod), method_getTypeEncoding(origMethod));
+    } <span class="hljs-keyword">else</span> {
+        method_exchangeImplementations(origMethod, swizMethod);
+    }
+}</code></pre>
+<h4>后记</h4>
+<p>个人认为Method Swizzling是OC动态性的最好诠释，深入地去学习并理解其特性，将有助于我们在业务量不断增大的同时还能保持代码的低耦合度，降低维护的工作量和难度。</p>
+<p>欢迎大家交流探讨。</p>
+</div>
+        </div>
+      </div>
+
+      <div class="visitor_edit">
+        <!-- further readings -->
+        <div id="further-readings" data-user-slug="" data-user-nickname="">
+          <div id="further-reading-line" class="hide further-reading-line"></div>
+          <ul id="further-readings-list" class="reading-list unstyled"></ul>
+          <div id="further-reading-new" class="reading-edit">
+              <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+                <i class="fa fa-plus-circle"></i> 推荐拓展阅读
+</a>            <div id="further-reading-form"></div>
+          </div>
+        </div>
+        <div class="pull-right">
+          <!-- copyright -->
+          <div data-original-title="转载请联系作者获得授权，并标注“简书作者”。" class="author-copyright pull-right" data-toggle="tooltip" data-html="true" title="">
+            <a><i class="fa fa-copyright"></i> 著作权归作者所有</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reward / Support Author -->
+        <div class="support-author">
+          <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+            <a class="btn btn-pay" data-toggle="modal" href="#pay-modal">¥ 打赏支持</a>
+          <div class="avatar-list"></div>
+        </div>
+
+      <!-- article meta bottom -->
+      <div class="meta-bottom clearfix">
+        <!--  Like Button -->
+        <div class="like ">
+            <div class="like-button">
+              <a id="like-note" class="like-content" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+                <i class="fa fa-heart-o"></i>  喜欢
+</a></div>          <span data-original-title="查看所有喜欢的用户" id="likes-count" data-toggle="tooltip" data-placement="right" title="">45</span>        </div>
+        <!--  share group -->
+        <div class="share-group pull-right">
+          <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1881139527',u=z||d.location,p=['&amp;url=',e(u),'&amp;title=',e(t||d.title),'&amp;source=',e(r),'&amp;sourceUrl=',e(l),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','http://cwb.assets.jianshu.io/notes/images/3211098/weibo/image_6e9b3bcf335e.jpg',%20'%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@%E7%AE%80%E4%B9%A6%20%EF%BC%89','http://www.jianshu.com/p/3efc3e94b14c','%E9%A1%B5%E9%9D%A2%E7%BC%96%E7%A0%81gb2312|utf-8%E9%BB%98%E8%AE%A4gb2312'));" data-name="weibo">
+            <i class="fa fa-weibo"></i><span>分享到微博</span>
+          </a>
+          <a data-toggle="modal" href="#share-weixin-modal" data-name="weixin">
+            <i class="fa fa-weixin"></i><span>分享到微信</span>
+          </a>
+          <div class="more">
+            <a href="javascript:void(0)" data-toggle="dropdown">更多分享<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu arrow-top">
+                <li><a href="http://cwb.assets.jianshu.io/notes/images/3211098/weibo/image_6e9b3bcf335e.jpg" target="_blank" data-name="changweibo"><i class="fa fa-arrow-circle-o-down"></i> 下载长微博图片</a></li>
+                <li>
+                  <a data-name="tweibo" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshuio%20%EF%BC%89'),x=function(){if(!window.open(r,'tweibo','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/tweibo.png" alt="Tweibo"> 分享到腾讯微博
+</a>                </li>
+                <li>
+                  <a data-name="qzone" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B'),x=function(){if(!window.open(r,'qzone','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/qzone.png" alt="Qzone"> 分享到QQ空间
+</a>                </li>
+                <li>
+                  <a data-name="twitter" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://twitter.com/share?url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;text='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshucom%20%EF%BC%89')+'&amp;related='+e('jianshucom'),x=function(){if(!window.open(r,'twitter','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/twitter.png" alt="Twitter"> 分享到Twitter
+</a>                </li>
+                <li>
+                  <a data-name="facebook" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/3efc3e94b14c',x=function(){if(!window.open(r,'facebook','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/facebook.png" alt="Facebook"> 分享到Facebook
+</a>                </li>
+                <li>
+                  <a data-name="google_plus" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://plus.google.com/share?url='+e('http://www.jianshu.com/p/3efc3e94b14c'),x=function(){if(!window.open(r,'google_plus','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/google_plus.png" alt="Google plus"> 分享到Google+
+</a>                </li>
+                <li>
+                  <a data-name="douban" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e('http://www.jianshu.com/p/3efc3e94b14c')+'&amp;title='+e('iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling')+'&amp;sel='+e(s)+'&amp;v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&amp;r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/douban.png" alt="Douban"> 分享到豆瓣
+</a>                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="share-weixin-modal" class="modal hide fade share-weixin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div title="http://www.jianshu.com/p/3efc3e94b14c?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weixin" class="modal-body">
+    <h5>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h5>
+  <canvas style="display: none;" height="170" width="170"></canvas><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACqCAYAAAA9dtSCAAAHxklEQVR4nO2bS5JkIQwD6/6Xntn0qj+ALBl4VakIVoVl2eTrXb9er9e/HWck16vad6aueV3vzlyjjIdnOL8gQAVUQDUEqJeCmlQSVKWX6u3ApfRSvZQcjtfIW82RFKAC6rK3miMpQAXUZW81R1KACqjL3mqOpCRQnUe+BVSnVpnfPaO+zkydu3Q+3EItoALq2j5mfZQcgCoKUNf3Meuj5ABUUYC6vo9ZHyXHx4PqAOLmcmYY+SSVnAFQARVQARVQAVUYQukzE6DmvAHVUOdCnBxdx+3bNcPMy+m1UAuo1RyACqjbFuLkANRLQHV0Cq7kB7Qzl5PDmclR0mvmDaiCF6D2ec28AVXwAtQ+r5k3oApegNrnNfN+qUuonlEQdQGj30/VJmd66j6aD6AmapMzPXUfgHrpw3TN9NR9AOqlD9M101P30Xp+dL9AyeXOvJK5UrVu5uofDHc/nboyGaAC6nddmQxQAfW7rkwGqID6XS8lZBIQZXmc+lHeUH0X9XdHgPrmR3lD9V3U3x0B6psf5Q3Vd1F/dzQENbkgxVvNcUpJQFZ91XmTu3LfyXxzQK0KULXcgHpIgKrlBtRDAlQtt/XmyaBKaEdODiezMlNnrSN3RiUHoAJqWYAqhnQEqHUBqhjSEaDW9ZagJoforFWUfAilTzKjUu/kdnNGvVJBAHXcJ5lRqXdyuzkBFVCX653cbk5ABdTleie3mzPslQHEgXonMMoMqncyV9eH7dxNzqAKUAd3Ve9kLkD90QtQ/7qreidzAeqPXoD6113VO5kLUL/1GjVWgjpDuUrBlQRm58fYtQ/nrqsfO3KCACqgdglQAXV5H85dVxaoyqKdR3KBOQWXMpNTuwsY9Z3U3NJuU42dkMkBATUnQAVUqxZQARVQi5nbQU0BpA59YvG/5bilz64P282Z6qvmANRL+gAqoA5z3NIHUAF1mOOWPoDaCKrZuGW5zsLc+VMPl/yYnMzpXo4XoBqZkzMpfRQBKqBGZ1L6KAJUQI3OpPRR9JagOmaBIJGFKb4zyJ2ZZrmU3KqXM1P17oaPAFD/qnVmmuVScqtezkyAOqgFVECd9upqnFxmp5ezTAV6Z4bOD3n0uyt1juGpDgGogKr2AtTQDIAKqNJAO70A9e/fXV0DqhM6qR2+aeiTtaPf3Rm7alUvQF30BdRsreoFqIu+gJqtVb0AddEXULO1qtera7nOQ7hDVnt1zafmOrnbU28MqIDatktAbVxuygdQAbV1uSkfQD0IaqE4shC1r6NTEJyqdZSE3u0NqIDa1hdQDQHqvr6AaghQ9/V9BKidtcqAs9+rdztnuvVDVXM6uwVUQAXUXbUjAepYjwU1NVRyYWqts4BV35Xfq5lnd5MfTFdmdQ65ttropiGqmQE1l1mdQ66tNrppiGpmQM1lVueQa6uNbhqimhlQc5nVOQq1tQUkT1Kdj9o1fxrcJ/ZdqAFUQD3fF1AB9RF9ARVQH9HXAtUZaqdOLS+Z8VRt8t2SvoAKqIAKqPWMp2oBdaMANbcbR62gVht/b/4Oy1TBHf3emcv5wHbuJzqTE7p61x3QEaDu2w+gGgLUffsJz5QzU9Q5lNLXyTTy7txHZ62zj2Y+rgkCqIA66n1NEEAF1FHva4IAKqD+3Ttqtil06q7aV5lRzZGCS51BqU3OIHvJDovBABVQATV0V+0LqLkZZC/ZYTEYoALqMVB3PYz6UCkwnYwO1G6vLrlvOvpN3k8qOKACKqAKtUkBKqACarBXl64C9ZYgSt9dx8mRlNNr57u4vScHUAEVUAE1IEAFVEB9Iqhq44OhY/AlH1V5cAcWZybl9+SbujMBqpFxVD8ToMo5AbWacVQ/E6DKOXseZhdchYGXHyaZWbmffHR1X9W9/+aVuvt1H1B3ZAbU+t2v+4C6IzOg1u9+3QfUHZkBtX73379/uf/rd+TAtZKz8Stv301Fu/axdbfOwCkBalaACqjLfU8KUAF1ue9JfRyoipkaLPmojlfqIdQcI28X+q6PWqlNzgCok1pArdcCqpjDqQXUei2gijmcWkCt17aC2hmkdYiQd6fXzpm6dtvpNf191RhQAbXTC1CDvo7XzpneEtQu2JQh3UddzagC4Hg5vXf2vTXHLwdQV2f4BEBuyfHLAdTVGT4BkFty/HIAdXWGTwDklhw/zpSKJiWBGvk6mTq9d82k5kr2TdUCqlgLqHVvNxegCrWAWvd2cwGqUAuodW8318sBZhdcp0BVZ3JmUDJ35qj2Wfnd3C2gVhc7qndmVHMmc1T7AGp4uUotoAJqdCHVu+5iR/XOjGrOZI5qn62gJpVcpvMRqDlTj6zWJvumZnL3nKr9OoAKqIAKqIu1gDqdAVAB9eGgOrAoQ6peynKTcCWP0suRu9sb5gfUiW55KEeACqiA+gmgOg/jgNoFhJJRzal6V+/OcnXWLngDKqCu5eqsXfAGVEBdy9VZu+ANqIC6lquzdsH7/DILoWPwdS2386NQdp/Mfar26wAqoK7lPlULqBOvzoxJ79HvydynagF14tWZMek9+j2Z+1TtFFRHSlAX+tQH5PRRzy7t/EA6cwBqqA+g9uYA1FAfQO3NAaihPoDam+OVXH4VmELoMmypPmovZT/OLjs/+s6PcSEXoFb6qL0AdSxANQSogAqogCrl+g/vFP5v71Vu0AAAAABJRU5ErkJggg==" style="display: block;"></div>
+</div>
+
+      
+      <div id="notebooks-menu" class="panel notebooks-menu arrow-top modal hide fade"><img class="loader-tiny" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/tiny.gif" alt="Tiny"></div>
+      <div id="collection-menu" class="panel collection-menu arrow-top modal hide fade"><img class="loader-tiny" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/tiny.gif" alt="Tiny"></div>
+      
+      <div id="likes-modal" class="modal modal_new support_list-modal fullscreen hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>喜欢的用户</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="unstyled users">
+        <li data-user-id="2194800"> <a class="avatar" href="http://www.jianshu.com/users/87dc1879331c"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/ffa110d1d07e.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/87dc1879331c">克尔苏加德</a> <span class="time">2016.08.11 19:24</span></li><li data-user-id="301530"> <a class="avatar" href="http://www.jianshu.com/users/f00ad5c62f05"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/b75ef971e556.png"> </a> <a class="blue-link" href="http://www.jianshu.com/users/f00ad5c62f05">Abnerzj</a> <span class="time">2016.08.04 18:41</span></li><li data-user-id="1521730"> <a class="avatar" href="http://www.jianshu.com/users/1cd19608402e"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/408d2c6106b6.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/1cd19608402e">爬树的蚂蚁</a> <span class="time">2016.07.31 17:16</span></li><li data-user-id="1839148"> <a class="avatar" href="http://www.jianshu.com/users/d05f1c60e82b"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/51b56be0297d.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/d05f1c60e82b">臂化羽</a> <span class="time">2016.07.20 14:48</span></li><li data-user-id="1406275"> <a class="avatar" href="http://www.jianshu.com/users/30bf24fce3ca"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/809910951e69.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/30bf24fce3ca">阳仔L</a> <span class="time">2016.07.14 16:19</span></li><li data-user-id="2105941"> <a class="avatar" href="http://www.jianshu.com/users/fccfc62de9cb"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/58eb71465e7a.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/fccfc62de9cb">敲来瞧去</a> <span class="time">2016.06.28 15:46</span></li><li data-user-id="2240803"> <a class="avatar" href="http://www.jianshu.com/users/6a16bd6f1d06"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/2-65a6e6d032559f3c53475eb61d7ea573.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/6a16bd6f1d06">半块</a> <span class="time">2016.06.24 23:34</span></li><li data-user-id="2305917"> <a class="avatar" href="http://www.jianshu.com/users/a47271220075"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/4343fb372d00.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/a47271220075">Han_Count</a> <span class="time">2016.06.21 15:37</span></li><li data-user-id="1326604"> <a class="avatar" href="http://www.jianshu.com/users/9848e83ebb89"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/a2ea53c11cda.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/9848e83ebb89">静花寒</a> <span class="time">2016.06.21 08:21</span></li><li data-user-id="1165585"> <a class="avatar" href="http://www.jianshu.com/users/8c996d6e4f65"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/bedcaae4f6e7.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/8c996d6e4f65">南城琉璃月</a> <span class="time">2016.06.17 14:11</span></li><li data-user-id="2093496"> <a class="avatar" href="http://www.jianshu.com/users/8d586f6ae765"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/8-77a9d346e43ea9a5ea58086d74909362.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/8d586f6ae765">左边蛋痒</a> <span class="time">2016.06.16 21:02</span></li><li data-user-id="313229"> <a class="avatar" href="http://www.jianshu.com/users/122c107eb874"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/6079637bb13d.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/122c107eb874">小小小阿博er</a> <span class="time">2016.06.15 20:53</span></li><li data-user-id="1719830"> <a class="avatar" href="http://www.jianshu.com/users/0dd40fb19c90"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/76630e61d86d.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/0dd40fb19c90">不简单的风度</a> <span class="time">2016.05.24 18:50</span></li><li data-user-id="1864381"> <a class="avatar" href="http://www.jianshu.com/users/ef23b589c417"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/15-57a3e97082943073824a3529187f31f9.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/ef23b589c417">不管you多苦</a> <span class="time">2016.05.11 16:11</span></li><li data-user-id="144945"> <a class="avatar" href="http://www.jianshu.com/users/3ed4ddcd0196"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/2-65a6e6d032559f3c53475eb61d7ea573.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/3ed4ddcd0196">Zubuntu</a> <span class="time">2016.05.09 11:03</span></li><a class="more hidden" data-max-id="18201779" href="javascript:void(null);"><i class="fa fa-ellipsis-h"></i></a></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Comments -->
+    <div id="comments" class="comment-list clearfix">
+        <div class="comment-head clearfix">
+          6条评论
+          <span class="order">
+            （
+            <a data-order="asc" class="active" href="javascript:void(0)">按时间正序</a>·
+            <a data-order="desc" href="javascript:void(0)">按时间倒序</a>·
+            <a data-order="likes_count" href="javascript:void(0)">按喜欢排序</a>
+            ）
+          </span>
+            <a class="goto-comment pull-right" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+              <i class="fa fa-pencil"></i>添加新评论
+</a>        </div>
+        <div id="comment-list">
+
+
+<div class="note-comment clearfix" id="comment-1756070">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/2e75aef012ff">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/05006d340c7b.jpg" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/2e75aef012ff">方磊</a>
+        </p>
+        <span class="reply-time">
+          <small>3 楼 · </small>
+          <a href="http://www.jianshu.com/p/3efc3e94b14c/comments/1756070#comment-1756070">2016.03.18 20:49</a></span>
+      </div>
+      <p>要谨慎使用，尤其像是 
+viewcontroller。因为，nav和tab也是vc的子类，你在vc的扩展里加了swizzling就会影响到nav和tab，可能造成意外。
+另外，swizzling是面相整个工程的窝，所以你加了之后，第三方库以及第三方sdk里的方法也会被替换。譬如你在image中加了前缀new，相应
+的第三方sdk中，可能就取不到图了。</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1756070" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(2)</span>
+</a>        
+
+        <a data-id="1756070" data-nickname="方磊" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list ">
+        <div class="child-comment" id="comment-1820776" data-id="1820776">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/23405cc32ae8">Whoateme</a>：
+      <a href="http://www.jianshu.com/users/2e75aef012ff" class="maleskine-author" target="_blank" data-user-slug="2e75aef012ff">@方磊</a> 其实我觉得作者也只是做个比喻, 终归如何使用, 还是要切合自己的业务需求
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="1756070" data-nickname="Whoateme" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/3efc3e94b14c/comments/1820776#comment-1820776">2016.03.24 21:13</a></span>
+      
+    </div>
+  </div>
+  <div class="child-comment" id="comment-3567126" data-id="3567126">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/263d13fa604d">xx紫紫xx</a>：
+      这个例子只是告诉如何使用， 怎么使用还要靠自己抉择。。。。  你说的确实也有道理，所以方法的交换要谨慎使用；
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="1756070" data-nickname="xx紫紫xx" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/3efc3e94b14c/comments/3567126#comment-3567126">2016.08.11 10:53</a></span>
+      
+    </div>
+  </div>
+
+      <div data-state="remaining-child-comments"></div>
+        <div class="comment-toolbar clearfix">
+          <span class="pull-right">
+            <a data-id="1756070" class="reply" href="javascript:void(null)"><i class="fa fa-pencil"></i> 添加新回复</a>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1767950">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/7bcf2b8aec25">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/deab29f37ba5.jpg" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/7bcf2b8aec25">Unc1eWang</a>
+        </p>
+        <span class="reply-time">
+          <small>4 楼 · </small>
+          <a href="http://www.jianshu.com/p/3efc3e94b14c/comments/1767950#comment-1767950">2016.03.19 21:48</a></span>
+      </div>
+      <p>写的好棒</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1767950" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="1767950" data-nickname="Unc1eWang" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1768167">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/a0933f57748c">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/392dd1a42815.png" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/a0933f57748c">我会发光哦丶</a>
+        </p>
+        <span class="reply-time">
+          <small>5 楼 · </small>
+          <a href="http://www.jianshu.com/p/3efc3e94b14c/comments/1768167#comment-1768167">2016.03.19 22:13</a></span>
+      </div>
+      <p>很好。但是对于在image中加了前缀new，相应的第三方sdk中，可能就取不到图了。该怎么办？</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1768167" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="1768167" data-nickname="我会发光哦丶" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1827773">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/7a6d4008ac4f">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/1-cd1d6dd91a96ca16fafcc8896bbc7b32.jpg" alt="1">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/7a6d4008ac4f">许久以前</a>
+        </p>
+        <span class="reply-time">
+          <small>6 楼 · </small>
+          <a href="http://www.jianshu.com/p/3efc3e94b14c/comments/1827773#comment-1827773">2016.03.25 15:05</a></span>
+      </div>
+      <p>多谢，学了点东西</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1827773" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="1827773" data-nickname="许久以前" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+          <p class="signout-comment">
+    <a class="btn btn-info" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+      登录后发表评论
+</a>  </p>
+
+    </div>
+    <!-- -->
+
+  </div>
+
+  <script type="application/json" data-name="note">
+    {"id":3211098,"abbr":"前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime现在IT届流行一个词叫“黑科技”，泛指一些让人“不明觉厉的”新技术或新产品，那在iOS开发中有什么高大上的“黑科技”呢？runtime中的MethodSwizzling当仁不让，它是一把双刃剑，高手耍起来威力无限，菜鸟耍起来则可能伤及自身。对于这样的黑科技，我们当然要掌握并努力驾驭之。什么是MethodSwizzlingMethodSwizzling（貌似没有很正式的中文名，下文使用暴力的中文来代替：方法交换），顾名思义，就是将两个方法的实现交换，即由原来的A－AIm...","slug":"3efc3e94b14c","url":"http://www.jianshu.com/p/3efc3e94b14c","image_url":"http://cwb.assets.jianshu.io/notes/images/3211098/weibo/image_6e9b3bcf335e.jpg","wordage":1952,"has_further_readings":false,"views_count":1882,"likes_count":45,"comments_count":6,"rewards_total_count":0}
+  </script>
+
+  <script type="application/json" data-name="uuid">
+    {"uuid":"45a9a12c-4c04-41f4-8e11-50481f4a689d"}
+  </script>
+
+  <script type="application/json" data-name="author">
+    {"id":1644426,"nickname":"明仔Su","slug":"d1ea95326c8c","public_notes_count":18,"followers_count":1170,"total_likes_count":964,"is_current_user":false,"is_signed_author":false}
+  </script>
+
+
+    <div class="include-collection">
+      <div class="content">
+        <h5>被以下专题收入，发现更多相似内容：</h5>
+        <ul id="all-collections" class="unstyled collections-list">
+            <li>
+              <a class="avatar" href="http://www.jianshu.com/collection/NEt52a"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/computer_guy.jpg" alt="180"></a>              <div class="collections-info">
+                <h5>
+                  <a href="http://www.jianshu.com/collection/NEt52a">程序员</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>171.7K</span>
+  </div>
+
+                <p class="description">如果你是程序员，或者有一颗喜欢写程序的心，喜欢分享技术干货、项目经验、程序员日常囧事等等，欢迎投稿《程序员》专题。
+
+专题主编：小...</p>
+                <p>
+                  <a class="blue-link" href="http://www.jianshu.com/collection/NEt52a">23522篇文章</a> · 171774人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="http://www.jianshu.com/collection/bDHhpK"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/rdn_4ddb18fddd2e9_1.jpg" alt="180"></a>              <div class="collections-info">
+                <h5>
+                  <a href="http://www.jianshu.com/collection/bDHhpK">首页投稿</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>129.5K</span>
+  </div>
+
+                <p class="description">玩转简书的第一步，从这个专题开始。
+
+想上首页热门榜么？好内容想被更多人看到么？来投稿吧！如果被拒也不要灰心哦～入选文章会进一个队...</p>
+                <p>
+                  <a class="blue-link" href="http://www.jianshu.com/collection/bDHhpK">100240篇文章</a> · 129588人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="http://www.jianshu.com/collection/3233d1a249ca"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/162902612251cbd95971b82.png" alt="180"></a>              <div class="collections-info">
+                <h5>
+                  <a href="http://www.jianshu.com/collection/3233d1a249ca">iOS Developer</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>25.9K</span>
+  </div>
+
+                <p class="description">分享 iOS 开发的知识，解决大家遇到的问题，讨论iOS开发的前沿，欢迎大家投稿~</p>
+                <p>
+                  <a class="blue-link" href="http://www.jianshu.com/collection/3233d1a249ca">12967篇文章</a> · 25933人关注
+                </p>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Modal -->
+    <div class="modal pay-modal text-center hide fade" id="pay-modal">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <form id="new_reward" class="new_reward" target="_blank" action="/notes/3211098/rewards" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="2Zu+0+YZQUtwvsyqFpltyYxsVKu7+luR8em5SmE5WWOzsPc4z13YlLVQZ7qrLuWNbrq5e0PzvzXVgmJ+fNy04g==" type="hidden">
+    <div class="modal-body">
+      <a href="http://www.jianshu.com/users/d1ea95326c8c">
+        <div class="avatar"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/82362aeb7447.gif" alt="100"></div>
+</a>      <p><i class="fa fa-quote-left pull-left"></i>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！<i class="fa fa-quote-right pull-right"></i></p>
+      <div class="main-inputs text-left">
+        <div class="control-group">
+          <label for="reward_amount">打赏金额</label><i class="fa fa-yen"></i>
+          <input value="2.00" name="reward[amount_in_yuan]" id="reward_amount_in_yuan" type="text">
+        </div>
+        <div class="control-group message">
+          <textarea placeholder="给Ta留言" name="reward[message]" id="reward_message"></textarea>
+        </div>
+      </div>
+      <div class="choose-pay text-left">
+        <h5>选择支付方式：</h5>
+        <div>
+          <label for="reward_channel_alipay">
+            <div style="position: relative;" class="iradio_minimal checked"><input style="position: absolute; opacity: 0;" value="alipay" checked="checked" name="reward[channel]" id="reward_channel_alipay" type="radio"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div>
+            <span class="alipay-bg"></span>
+</label>
+          
+          <label for="reward_channel_wx_pub_qr">
+            <div style="position: relative;" class="iradio_minimal"><input style="position: absolute; opacity: 0;" value="wx_pub_qr" name="reward[channel]" id="reward_channel_wx_pub_qr" type="radio"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div>
+            微信支付
+</label>        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button name="button" type="submit" class="btn btn-large btn-pay">立即支付</button>
+    </div>
+</form></div>
+
+    <div class="modal success-pay text-center hide fade" id="success-pay">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+    <h3><i class="icon-ok"></i>打赏成功</h3>
+    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/complete-pay-25426877089eb23bd76d9d0e6aad89c1.png" alt="Complete pay">
+  </div>
+  <div class="modal-footer">
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+  <div id="flash" class="hide"></div>
+  
+  <div id="view-mode-modal" tabindex="-1" class="modal hide read-modal" aria-hidden="false" data-js-module="view-mode-modal">
+    <div class="btn-group change-background" data-toggle="buttons-radio">
+      <a class="btn btn-daytime active" data-mode="day" href="javascript:void(null);">
+        <i class="fa fa-sun-o"></i>
+</a>      <a class="btn btn-nighttime " data-mode="night" href="javascript:void(null);">
+        <i class="fa fa-moon-o"></i>
+</a>    </div>
+    <div class="btn-group change-font" data-toggle="buttons-radio">
+      <a class="btn font " data-font="font1" href="javascript:void(null);">宋体</a>
+      <a class="btn font hei active" data-font="font2" href="javascript:void(null);">黑体</a>
+    </div>
+    <div class="btn-group change-locale" data-toggle="buttons-radio">
+      <a class="btn font active" data-locale="zh-CN" href="javascript:void(null);">简</a>
+      <a class="btn font hei " data-locale="zh-TW" href="javascript:void(null);">繁</a>
+    </div>
+  </div>
+
+  
+
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/base-ded41764c207f7ff545c28c670922d25.js"></script>
+  
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/reading-base-0028299ec0c770293c0f07e2f338b48f.js"></script>
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9AMethod%20Swizzling%20-%20%E7%AE%80%E4%B9%A6_files/note_show-1805bf39f59948b52870922039360dbb.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35169517-1']);
+  _gaq.push(['_setCustomVar', 2, 'User Type', 'Visitor', 1 ]);
+  _gaq.push(['_trackPageview']);
+
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+</body></html>

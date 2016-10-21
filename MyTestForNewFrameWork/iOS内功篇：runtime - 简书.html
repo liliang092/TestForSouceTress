@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":2,"applicationTime":165,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=p(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function l(e,t){g[e]=p(e).concat(t)}function p(e){return g[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",m[n]=t,t in f||(f[t]=[])})}var g={},m={},w={on:l,emit:n,get:d,listeners:p,context:t,buffer:v};return w}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},l=t.exports=o();l.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(m,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=s.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document,l="addEventListener",p="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-984.min.js"},w=d&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[l]?(s[l]("DOMContentLoaded",i,!1),f[l]("load",r,!1)):(s[p]("onreadystatechange",o),f[p]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description"  content="前言本来打算写一篇关于runtime的学习总结，无奈长篇大论不是我的风格，就像写申论一样痛苦，加之网上关于tuntime的文章多如牛毛，应该也够童子们学习的了，今天就随便聊聊我的理解吧。runtime是什么对于初学者，runtime如尼斯湖水怪一样，只存在于传说中，对于开发者，runtime是做好iOS开发，或是深刻掌握ObjectiveC所必需理解的东西。大公司面试都喜欢问：你对runtime熟悉吗？并不是runtime在开发中经常用到，我认为它是OC最核心的部分，只有掌握好它，你才能理解其底层的原理，而不是做一个只会造轮子的码农。要练成盖世神功，需先奠定自身深厚的...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb" />
+  <meta property="qc:admins" content="104102651453316562112116375" />
+  <meta property="qc:admins" content="11635613706305617" />
+  <meta property="qc:admins" content="1163561616621163056375" />
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4" />
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI" />
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/f493bc6a949e/comments/1688988">
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3170834">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="iOS内功篇：runtime" property="twitter:title">
+  <meta content="前言本来打算写一篇关于runtime的学习总结，无奈长篇大论不是我的风格，就像写申论一样痛苦，加之网上关于tuntime的文章多如牛毛，应该也够童子们学习的了，今天就随便聊聊我的理解吧。runtime是什么对于初学者，runtime如尼斯湖水怪一样，只存在于传说中，对于开发者，runtime是做好iOS开发，或是深刻掌握ObjectiveC所必需理解的东西。大公司面试都喜欢问：你对runtime熟悉吗？并不是runtime在开发中经常用到，我认为它是OC最核心的部分，只有掌握好它，你才能理解其底层的原理，而不是做一个只会造轮子的码农。要练成盖世神功，需先奠定自身深厚的..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/f493bc6a949e" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="iOS内功篇：runtime">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/f493bc6a949e">
+  <meta property="og:description" content="前言本来打算写一篇关于runtime的学习总结，无奈长篇大论不是我的风格，就像写申论一样痛苦，加之网上关于tuntime的文章多如牛毛，应该也够童子们学习的了，今天就随便聊聊我的理解吧。runt...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/3170834" />
+  <meta property="al:ios:app_store_id" content="888237539" />
+  <meta property="al:ios:app_name" content="简书" />
+
+  <meta property="al:android:url" content="jianshu://notes/3170834" />
+  <meta property="al:android:package" content="com.jianshu.haruki" />
+  <meta property="al:android:app_name" content="简书" />
+  <!-- End -->
+
+  <title>iOS内功篇：runtime - 简书</title>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="fqVJgS1pft1UgLl/zJxwMZHGgFgpHXHFGF9sPXVjaPcUjgBqBC3nApFuEm9xK/h1cxBtiNEUlWE8NLcJaIaFdg==" />
+  <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/base-28859e35d389885d08837bc971ff742c.css" />
+
+    <link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/reading-note-cb4c7fc3074ff1cb9e73649e96817782.css" />
+  <link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/base-read-mode-64acccf6966299cfa3d580140a2582fe.css" />
+  <script src="http://cdn-qn0.jianshu.io/assets/modernizr-613ea63b5aa2f0e2a1946e9c28c8eedb.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if IE 8]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <link href="http://baijii-common.b0.upaiyun.com/icons/favicon.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-b426758a1fcfb30486f20fd073c3b8ec.png" sizes="57x57" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-feca4b183b9d29fd188665785dc7a7f1.png" sizes="72x72" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-ba757f1ad3421192ce7192170393d2b0.png" sizes="76x76" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/114-8dae53b3bcea3f06bb139e329d1edab3.png" sizes="114x114" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-fa315ee0177dba4c55d4f66d4129b47f.png" sizes="120x120" />
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-052f5799bec8fb3aa624bdc72ef5bd1d.png" sizes="152x152" />
+
+</head>
+
+<body class="post output zh cn mac mozilla reader-day-mode reader-font2" data-js-module="note-show" data-locale="zh-CN">
+  
+  <div class="navbar navbar-jianshu shrink">
+  <div class="dropdown">
+    <a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">
+      简
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li><a href="/"><i class="fa fa-home"></i> 首页</a></li>
+      <li><a href="/collections"><i class="fa fa-th"></i> 专题</a></li>
+      <li><a href="/user_invitations"><i class="fa fa-money"></i> 发钱啦</a></li>
+    </ul>
+  </div>
+</div>
+<div class="navbar-user">
+    <a class="login" data-signup-link="true" data-toggle="modal" href="/sign_up">
+      <i class="fa fa-user"></i> 注册
+</a>    <a class="login" data-signin-link="true" data-toggle="modal" href="/sign_in">
+      <i class="fa fa-sign-in"></i> 登录
+</a>    <a class="daytime set-view-mode pull-right" href="javascript:void(0)"><i class="fa fa-moon-o"></i></a>
+</div>
+<div class="navbar navbar-jianshu expanded">
+  <div class="dropdown">
+      <a class="active logo" role="button" data-original-title="个人主页" data-container="div.expanded" href="/">
+        <b>简</b><i class="fa fa-home"></i><span class="title">首页</span>
+</a>      <a data-toggle="tooltip" data-placement="right" data-original-title="专题" data-container="div.expanded" href="/collections">
+        <i class="fa fa-th"></i><span class="title">专题</span>
+</a>    <a class="ad-selector" href="/apps">
+      <i class="fa fa-mobile"></i><span class="title">下载手机应用</span>
+</a>    <div class="ad-container ">
+      <div class="ad-pop">
+        <img class="ad-logo" src="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/114-8dae53b3bcea3f06bb139e329d1edab3.png" alt="114" />
+        <p class="ad-title">简书</p>
+        <p class="ad-subtitle">交流故事，沟通想法</p>
+        <img class="ad-qrcode" src="http://cdn-qn0.jianshu.io/assets/app-page/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode" />
+        <div>
+          <a class="ad-link" href="https://itunes.apple.com/cn/app/jian-shu/id888237539?ls=1&amp;mt=8">iOS</a>·
+          <a class="ad-link" href="http://downloads.jianshu.io/apps/haruki/JianShu-1.11.2.apk">Android</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="nav-user">
+      <a href='#view-mode-modal' data-toggle='modal'><i class="fa fa-font"></i><span class="title">显示模式</span></a>
+
+      <a class="signin" data-signin-link="true" data-toggle="modal" data-placement="right" data-original-title="登录" data-container="div.expanded" href="/sign_in">
+        <i class="fa fa-sign-in"></i><span class="title">登录</span>
+</a>    </div>
+  </div>
+
+  
+    <div class="fixed-btn">
+    <a class="go-top hide-go-top" href="#"> <i class="fa fa-angle-up"></i></a>
+    <a class="qrcode" data-target="#bottom-qrcode" data-toggle="modal" href="javascript:void(0)"><i class="fa fa-qrcode"></i></a>
+    <a class="writer" href="/writer#/" data-toggle="tooltip" data-placement="left" title="写篇文章"><i class="fa fa-pencil"></i></a>
+    <!-- qrcode modal -->
+    <div id="bottom-qrcode" class="modal panel-modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <h4>下载简书移动应用</h4>
+      <div class="panel-body"><img src="http://cdn-qn0.jianshu.io/assets/app-page/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode" /></div>
+    </div>
+  </div>
+
+
+  <div id="show-note-container">
+    
+<div class="post-bg" id="flag">
+  <div class="wrap-btn">
+    <!-- Notebook and collections button upper left -->
+      <div class="article-related pull-left">
+          <a class="collection-menu-btn" data-toggle="modal" data-target="#collection-menu" href="javascript:void(null);">
+            <i class="fa fa-th"></i>
+</a>          <a class="notebooks-menu-btn" data-toggle="modal" data-target="#notebooks-menu" href="javascript:void(null);"><i class="fa fa-list-ul"></i></a>
+        <div class="related-avatar-group activities"></div>
+      </div>
+    <!-- ******* -->
+
+      <a class="login" data-signup-link="true" data-toggle="modal" href="/sign_up">
+    <i class="fa fa-user"></i> 注册
+</a>  <a class="login" data-signin-link="true" data-toggle="modal" href="/sign_in">
+    <i class="fa fa-sign-in"></i> 登录
+</a>
+
+    <!-- Buttons upper right -->
+    <!-- ******* -->
+  </div>
+
+  <div class="container">
+    <!-- Article activities for width under 768px -->
+    <div class="related-avatar-group activities"></div>
+      <div class="article">
+        <div class="preview">
+          <div class="author-info">
+              <div class="btn btn-small btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="/sign_in"><i class="fa fa-plus"></i>  <span>添加关注</span></a>
+  </div>
+
+            <a class="avatar" href="/users/d1ea95326c8c">
+              <img src="http://upload.jianshu.io/users/upload_avatars/1644426/82362aeb7447.gif?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>            <span class="label">
+                作者
+            </span>
+            <a class="author-name blue-link" href="/users/d1ea95326c8c">
+              <span>明仔Su</span>
+</a>              <span data-toggle='tooltip' data-original-title='最后编辑于 2016.03.17 20:35'>2016.03.10 19:43*</span>
+            <div>
+              <span>写了35383字</span>，<span>被1170人关注</span>，<span>获得了964个喜欢</span>
+            </div>
+          </div>
+          <h1 class="title">iOS内功篇：runtime</h1>
+          <div class="meta-top">
+            <span class="wordage"></span>
+            <span class="views-count"></span>
+            <span class="comments-count"></span>
+            <span class="likes-count"></span>
+          </div>
+
+          <!-- Collection/Bookmark/Share for width under 768px -->
+          <div class="article-share"></div>
+          <!-- -->
+
+          <div class="show-content"><h4>前言</h4>
+<p>本来打算写一篇关于runtime的学习总结，无奈长篇大论不是我的风格，就像写申论一样痛苦，加之网上关于tuntime的文章多如牛毛，应该也够童子们学习的了，今天就随便聊聊我的理解吧。</p>
+<h4>runtime是什么</h4>
+<p>对于初学者，runtime如尼斯湖水怪一样，只存在于传说中，对于开发者，runtime是做好iOS开发，或是深刻掌握Objective C所必需理解的东西。大公司面试都喜欢问：你对runtime熟悉吗？并不是runtime在开发中经常用到，我认为它是OC最核心的部分，只有掌握好它，你才能理解其底层的原理，而不是做一个只会造轮子的码农。要练成盖世神功，需先奠定自身深厚的内功，而tuntime就是iOS开发中的内功。</p>
+<p>那么runtime到底是什么鬼？</p>
+<pre><code>runtime是一个c和汇编写的动态库(感谢Lision的指正)，它就像一个小小的系统，将OC和C紧密关联，这个系统主要做两件事 ：
+1、封装C语言的结构体和函数，让开发者在运行时创建、检查或者修改类、对象和方法等等。
+2、传递消息，找出方法的最终执行代码。</code></pre>
+<p>听起来蛮抽象的，我们来点通俗的吧？没问题～～<br>我们先写一句OC的代码</p>
+<pre><code>[zhangsan walkTheDog];</code></pre>
+<p>那么在运行时runtime会将它转化成C语言的代码</p>
+<pre><code>objc_msgSend(zhangsan, @selector(walkTheDog));</code></pre>
+<p>这个方法就是发送消息的方法，类似这样的方法runtime提供了很多，比如：</p>
+<pre><code>objc_property_t * class_copyPropertyList ( Class cls, unsigned int *outCount ); // 获取属性列表
+Method * class_copyMethodList ( Class cls, unsigned int *outCount );            // 获取所有方法的数组
+BOOL class_addMethod ( Class cls, SEL name, IMP imp, const char *types );       // 添加方法</code></pre>
+<p>那么我们可以利用这些方法干点什么？</p>
+<pre><code>1、遍历对象的属性
+比如，看看zhangsan的有哪些属性（身高：180、年龄：18）</code></pre>
+<pre><code>2、动态添加/修改属性，动态添加/修改/替换方法
+比如，修改zhangsan的身高为190、年龄为20，替换walkTheDog方法（变成walkTheBigDog），给他添加一个新方法（walkTheCat）等等</code></pre>
+<pre><code>3、动态创建类/对象/协议等等
+比如，创建一个新的对象：lisi</code></pre>
+<pre><code>4、方法拦截调用
+比如，给zhangsan发送一个walkTheDog消息，但是zhangsan不知道怎么walk啊（没实现该方法），那我们可以拦截下，给该方法动态添加一个实现，甚至可以讲该方法定向或者打包给lisi（其他对象），让lisi来walk。</code></pre>
+<p>以上就是runtime的通俗解释，只是稍微举个例子，更多用法大家可以发挥聪明才智，举一反三。</p>
+<h4>方法调用流程</h4>
+<p>通俗地讲，调用方法（包含实例方法和类方法）相当于給一个对象发送消息。</p>
+<pre><code>所以，实际上，类本身也是一个对象（关于Class这一块就不再这里展开了）。
+当我们调用一个方法时，是这样的：
+Instance：调用实例方法时，会到对象所属的类的方法列表中查找。
+Class：调用类方法时，会到类的metaClass的方法列表中查找。</code></pre>
+<p>下面以实例对象调用方法<code>[blackDog walk]</code>为例描述方法调用的流程：</p>
+<pre><code>1、编译器会把`[blackDog walk]`转化为`objc_msgSend(blackDog，SEL)`，SEL为@selector(walk)。</code></pre>
+<pre><code>2、Runtime会在blackDog对象所对应的Dog类的方法缓存列表里查找方法的SEL</code></pre>
+<pre><code>3、如果没有找到，则在Dog类的方法分发表查找方法的SEL。（类由对象isa指针指向，方法分发表即methodList）</code></pre>
+<pre><code>4、如果没有找到，则在其父类（设Dog类的父类为Animal类）的方法分发表里查找方法的SEL（父类由类的superClass指向）</code></pre>
+<pre><code>5、如果没有找到，则沿继承体系继续下去，最终到达NSObject类。</code></pre>
+<pre><code>6、如果在234的其中一步中找到，则定位了方法实现的入口，执行具体实现</code></pre>
+<pre><code>7、如果最后还是没有找到，会面临两种情况：
+``(1) 如果是使用`［blackDog walk］`的方式调用方法``
+``(2) 使用`［blackDog performSelector:@selector(walk)］`的方式调用方法``</code></pre>
+<p>第一种情况编译器会报错，第二种需要到运行时才能确定对象能否接收指定的消息，这时候会进入消息转发的流程：</p>
+<h4>消息转发流程</h4>
+<p>1、动态方法解析<br>接收到未知消息时（假设blackDog的walk方法尚未实现），runtime会调用<code>+resolveInstanceMethod:（实例方法）</code>或者<code>+resolveClassMethod:（类方法）</code><br>在该方法中，我们可以給未知消息新增一个已经实现了的方法。</p>
+<pre><code>void walkFunc(id self, SEL _cmd) {
+    //let the dog walk
+}
+
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    NSString * selString = NSStringFromSelector(sel);
+    if ([selString isEqualToString:@"walk"]) {
+        class_addMethod(self.class, @selector(walk), (IMP)walkFunc, "@:");
+    }
+    return [super resolveInstanceMethod:sel];
+}</code></pre>
+<p>2、备用接收者<br>如果以上方法没有做处理，runtime会调用<code>- (id)forwardingTargetForSelector:(SEL)aSelector</code>方法。<br>如果该方法返回了一个非nil（也不能是self）的对象，而且该对象实现了这个方法，那么这个对象就成了消息的接收者，消息就被分发到该对象。<br>适用情况：通常在对象内部使用，让内部的另外一个对象处理消息，在外面看起来就像是该对象处理了消息。<br>比如：blackDog让女朋友whiteDog来接收这个消息</p>
+<pre><code>- (id)forwardingTargetForSelector:(SEL)aSelector {
+    NSString * selString = NSStringFromSelector(aSelector);
+    if ([selString isEqualToString:@"walk"]) {
+        return self.whiteDog;
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}</code></pre>
+<p>3、完整消息转发<br>在<code>- (void)forwardInvocation:(NSInvocation *)anInvocation</code>方法中选择转发消息的对象，其中anInvocation对象封装了未知消息的所有细节，并保留调用结果发送到原始调用者。<br>比如：blackDog将消息完整转发給主人dogOwner来处理</p>
+<pre><code>- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    if ([DogOwner instancesRespondToSelector:anInvocation.selector]) {
+        [anInvocation invokeWithTarget:self.dogOwner];
+    }
+}</code></pre>
+<p>4、如果在以上三个方法都没有处理未知消息，则会引发异常。</p>
+<h4>后记</h4>
+<p>本文主要通俗地描述了runtime的概念，并对其主要作用做了简单的概括，旨在給读者抛砖引玉，runtime的奥妙之处就由读者多多探索学习了。<br>初学者需要更深入地学习：<br>1、基本概念：Class、Ivar、Method等等<br>2、消息转发机制<br>3、在&lt;objc/runtime.h&gt;中理解runtime提供的方法和功能<br>4、在实际开发中如何灵活运用runtime</p>
+<pre><code>^_^相对于理论，程序员总是更擅长用代码来表达，博主接下来将陆续更新runtime实战应用系列文章，敬请关注。</code></pre>
+<p>传送门：<br><a href="http://www.jianshu.com/p/d361f169423b" target="_blank">iOS runtime实战应用：成员变量和属性</a><br><a href="http://www.jianshu.com/p/c68cc81ef763" target="_blank">iOS runtime实战应用：关联对象</a><br><a href="http://www.jianshu.com/p/3efc3e94b14c" target="_blank">iOS runtime实战应用：Method Swizzling</a></p>
+</div>
+        </div>
+      </div>
+
+      <div class="visitor_edit">
+        <!-- further readings -->
+        <div id="further-readings" data-user-slug="" data-user-nickname="">
+          <div id="further-reading-line" class="hide further-reading-line"></div>
+          <ul id="further-readings-list" class="reading-list unstyled"></ul>
+          <div id="further-reading-new" class="reading-edit">
+              <a data-signin-link="true" data-toggle="modal" href="/sign_in">
+                <i class="fa fa-plus-circle"></i> 推荐拓展阅读
+</a>            <div id="further-reading-form"></div>
+          </div>
+        </div>
+        <div class="pull-right">
+          <!-- copyright -->
+          <div class="author-copyright pull-right" data-toggle="tooltip" data-html="true" title="转载请联系作者获得授权，并标注“简书作者”。">
+            <a><i class="fa fa-copyright"></i> 著作权归作者所有</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reward / Support Author -->
+        <div class="support-author">
+          <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+            <a class="btn btn-pay" data-toggle="modal" href="#pay-modal">¥ 打赏支持</a>
+          <div class="avatar-list"></div>
+        </div>
+
+      <!-- article meta bottom -->
+      <div class="meta-bottom clearfix">
+        <!--  Like Button -->
+        <div class="like ">
+            <div class="like-button">
+              <a id="like-note" class="like-content" data-signin-link="true" data-toggle="modal" href="/sign_in">
+                <i class="fa fa-heart-o"></i>  喜欢
+</a></div>          <span id="likes-count" data-toggle="tooltip" data-placement="right" title="查看所有喜欢的用户">
+            <i class="fa fa-spinner fa-pulse"></i>
+</span>        </div>
+        <!--  share group -->
+        <div class="share-group pull-right">
+          <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/3170834/weibo/image_4fd7889fee59.jpg&#39;, &#39;推荐 明仔Su 的文章《iOS内功篇：runtime》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/f493bc6a949e&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-name="weibo">
+            <i class="fa fa-weibo"></i><span>分享到微博</span>
+          </a>
+          <a data-toggle="modal" href="#share-weixin-modal" data-name="weixin">
+            <i class="fa fa-weixin"></i><span>分享到微信</span>
+          </a>
+          <div class="more">
+            <a href="javascript:void(0)" data-toggle="dropdown">更多分享<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu arrow-top">
+                <li><a href="http://cwb.assets.jianshu.io/notes/images/3170834/weibo/image_4fd7889fee59.jpg" target="_blank" data-name="changweibo"><i class="fa fa-arrow-circle-o-down"></i> 下载长微博图片</a></li>
+                <li>
+                  <a data-name="tweibo" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url=&#39;+e(&#39;http://www.jianshu.com/p/f493bc6a949e&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 明仔Su 的文章《iOS内功篇：runtime》（ 分享自 @jianshuio ）&#39;),x=function(){if(!window.open(r,&#39;tweibo&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/tweibo.png" alt="Tweibo" /> 分享到腾讯微博
+</a>                </li>
+                <li>
+                  <a data-name="qzone" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/f493bc6a949e&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 明仔Su 的文章《iOS内功篇：runtime》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/qzone.png" alt="Qzone" /> 分享到QQ空间
+</a>                </li>
+                <li>
+                  <a data-name="twitter" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/f493bc6a949e&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 明仔Su 的文章《iOS内功篇：runtime》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/twitter.png" alt="Twitter" /> 分享到Twitter
+</a>                </li>
+                <li>
+                  <a data-name="facebook" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/f493bc6a949e&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/facebook.png" alt="Facebook" /> 分享到Facebook
+</a>                </li>
+                <li>
+                  <a data-name="google_plus" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/f493bc6a949e&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/google_plus.png" alt="Google plus" /> 分享到Google+
+</a>                </li>
+                <li>
+                  <a data-name="douban" href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/f493bc6a949e&#39;)+&#39;&amp;title=&#39;+e(&#39;iOS内功篇：runtime&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()">
+                    <img src="http://baijii-common.b0.upaiyun.com/social_icons/32x32/douban.png" alt="Douban" /> 分享到豆瓣
+</a>                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="share-weixin-modal" class="modal hide fade share-weixin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+    <h5>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h5>
+  </div>
+</div>
+
+      
+      <div id="notebooks-menu" class="panel notebooks-menu arrow-top modal hide fade"><img class="loader-tiny" src="http://baijii-common.b0.upaiyun.com/loaders/tiny.gif" alt="Tiny" /></div>
+      <div id="collection-menu" class="panel collection-menu arrow-top modal hide fade"><img class="loader-tiny" src="http://baijii-common.b0.upaiyun.com/loaders/tiny.gif" alt="Tiny" /></div>
+      
+      <div id="likes-modal" class="modal modal_new support_list-modal fullscreen hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>喜欢的用户</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="unstyled users">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Comments -->
+    <div id="comments" class="comment-list clearfix">
+        <div class="comment-head clearfix">
+          18条评论
+          <span class="order">
+            （
+            <a data-order="asc" class="active" href="javascript:void(0)">按时间正序</a>·
+            <a data-order="desc" href="javascript:void(0)">按时间倒序</a>·
+            <a data-order="likes_count" href="javascript:void(0)">按喜欢排序</a>
+            ）
+          </span>
+            <a class="goto-comment pull-right" data-signin-link="true" data-toggle="modal" href="/sign_in">
+              <i class="fa fa-pencil"></i>添加新评论
+</a>        </div>
+        <div id="comment-list">
+          <script type='application/json' data-name='comments-info'>
+  {"comments":[{"id":1680268,"children_count":0,"likes_count":0},{"id":1680443,"children_count":0,"likes_count":0},{"id":1681059,"children_count":0,"likes_count":0},{"id":1683176,"children_count":5,"likes_count":3},{"id":1688988,"children_count":0,"likes_count":0},{"id":1690378,"children_count":1,"likes_count":0},{"id":1697378,"children_count":0,"likes_count":0},{"id":1711448,"children_count":0,"likes_count":0},{"id":1753005,"children_count":0,"likes_count":0},{"id":1815149,"children_count":0,"likes_count":0},{"id":1841323,"children_count":0,"likes_count":0},{"id":2027681,"children_count":0,"likes_count":0}]}
+</script>
+
+
+<div class="note-comment clearfix" id="comment-1680268">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/04ea58da74f6">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1483059/d30fddadc0f9.jpg?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/04ea58da74f6">DXSmile</a>
+        </p>
+        <span class="reply-time">
+          <small>2 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1680268#comment-1680268">2016.03.10 22:47</a></span>
+      </div>
+      <p>好</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1680268" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1483059">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1680268/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1680268/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1680268" data-nickname="DXSmile" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1483059" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1680268.json">删除</a>
+        <a class="dismiss" data-commenter-id="1483059" data-remote="true" rel="nofollow" data-method="post" href="/comments/1680268/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1680443">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/389c20d5a244">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1443056/399bc0091f0a.jpeg?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/389c20d5a244">WzxJiang</a>
+        </p>
+        <span class="reply-time">
+          <small>3 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1680443#comment-1680443">2016.03.10 22:56</a></span>
+      </div>
+      <p>不错</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1680443" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1443056">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1680443/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1680443/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1680443" data-nickname="WzxJiang" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1443056" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1680443.json">删除</a>
+        <a class="dismiss" data-commenter-id="1443056" data-remote="true" rel="nofollow" data-method="post" href="/comments/1680443/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1681059">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/0cf100c3a1dd">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1519464/347fd74357e7?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/0cf100c3a1dd">9527941</a>
+        </p>
+        <span class="reply-time">
+          <small>4 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1681059#comment-1681059">2016.03.10 23:38</a></span>
+      </div>
+      <p>挺详细</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1681059" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1519464">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1681059/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1681059/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1681059" data-nickname="9527941" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1519464" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1681059.json">删除</a>
+        <a class="dismiss" data-commenter-id="1519464" data-remote="true" rel="nofollow" data-method="post" href="/comments/1681059/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1683176">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/32066deebaf9">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1644823/56b6d626580e.jpg?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/32066deebaf9">Lision</a>
+        </p>
+        <span class="reply-time">
+          <small>5 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1683176#comment-1683176">2016.03.11 09:49</a></span>
+      </div>
+      <p>有几点不敢苟同：<br>－1.runtime并不是纯c语言写的库，它是c和汇编写的动态库，部分函数的实现是用汇编语言写的。<br>－2.文中的消息转发机制第七点：<br>7、如果最后还是没有找到，会面临两种情况：<br>``(1) 如果是使用`［blackDog walk］`的方式调用方法``<br>``(2) 使用`［blackDog performSelector:@selector(walk)］`的方式调用方法``<br>第一种情况编译器会报错，第二种需要到运行时才能确定对象能否接收指定的消息，这时候会进入消息转发的流程：<br>中有错误，第一种情况[obj func]也会进入消息转发。<br>runtime的源码中有performSelector函数的实现，事实是[obj performSelector:SEL]就是调用的objc_msgSend函数，源码如下：<br>- (id)performSelector:(SEL)sel {<br>    if (!sel) [self doesNotRecognizeSelector:sel];<br>    return ((id(*)(id, SEL))objc_msgSend)(self, sel);<br>}</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1683176" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(3)</span>
+</a>        <div class="dropdown report" data-commenter-id="1644823">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1683176/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1683176/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1683176" data-nickname="Lision" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1644823" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1683176.json">删除</a>
+        <a class="dismiss" data-commenter-id="1644823" data-remote="true" rel="nofollow" data-method="post" href="/comments/1683176/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list ">
+        <div class="child-comment" id="comment-1683231" data-id="1683231">
+    <p>
+      <a class="blue-link" href="/users/32066deebaf9">Lision</a>：
+      <a href="/users/32066deebaf9" class="maleskine-author" target="_blank" data-user-slug="32066deebaf9">@Lision</a> 补充说明：其实文中的两种方法没有实现消息转发都会崩，本质没有区别！
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      <div class="dropdown report" data-commenter-id="1644823">
+        <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+        <ul class="dropdown-menu arrow-top">
+          <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1683231/abuse_reports?type=ad">广告及垃圾信息</a></li>
+          <li><a data-toggle="modal" data-url="/comments/1683231/abuse_reports" href="#report-modal">其他</a></li>
+        </ul>
+      </div>
+      <a data-id="1683176" data-nickname="Lision" class="reply" href="javascript:void(null)">回复</a>
+      <a data-commenter-id="1644823" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1683231.json">删除</a>
+      <a class="dismiss" data-commenter-id="1644823" data-remote="true" rel="nofollow" data-method="post" href="/comments/1683231/dismiss">删除</a>
+      <span class="reply-time pull-left">
+        <a href="/p/f493bc6a949e/comments/1683231#comment-1683231">2016.03.11 09:56</a></span>
+      </span>
+    </div>
+  </div>
+  <div class="child-comment" id="comment-1686381" data-id="1686381">
+    <p>
+      <a class="blue-link" href="/users/d1ea95326c8c">明仔Su</a>：
+      谢谢指出，我会尽快理清并更新文章
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      <div class="dropdown report" data-commenter-id="1644426">
+        <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+        <ul class="dropdown-menu arrow-top">
+          <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1686381/abuse_reports?type=ad">广告及垃圾信息</a></li>
+          <li><a data-toggle="modal" data-url="/comments/1686381/abuse_reports" href="#report-modal">其他</a></li>
+        </ul>
+      </div>
+      <a data-id="1683176" data-nickname="明仔Su" class="reply" href="javascript:void(null)">回复</a>
+      <a data-commenter-id="1644426" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1686381.json">删除</a>
+      <a class="dismiss" data-commenter-id="1644426" data-remote="true" rel="nofollow" data-method="post" href="/comments/1686381/dismiss">删除</a>
+      <span class="reply-time pull-left">
+        <a href="/p/f493bc6a949e/comments/1686381#comment-1686381">2016.03.11 15:10</a></span>
+      </span>
+    </div>
+  </div>
+  <div class="child-comment" id="comment-1686403" data-id="1686403">
+    <p>
+      <a class="blue-link" href="/users/32066deebaf9">Lision</a>：
+      <a href="/users/d1ea95326c8c" class="maleskine-author" target="_blank" data-user-slug="d1ea95326c8c">@明仔Su</a>  <img src="http://assets.jianshu.io/assets/emojis/relaxed.png" alt=":relaxed:" title=":relaxed:" class="emoji" width="20" height="20"> 客气
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      <div class="dropdown report" data-commenter-id="1644823">
+        <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+        <ul class="dropdown-menu arrow-top">
+          <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1686403/abuse_reports?type=ad">广告及垃圾信息</a></li>
+          <li><a data-toggle="modal" data-url="/comments/1686403/abuse_reports" href="#report-modal">其他</a></li>
+        </ul>
+      </div>
+      <a data-id="1683176" data-nickname="Lision" class="reply" href="javascript:void(null)">回复</a>
+      <a data-commenter-id="1644823" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1686403.json">删除</a>
+      <a class="dismiss" data-commenter-id="1644823" data-remote="true" rel="nofollow" data-method="post" href="/comments/1686403/dismiss">删除</a>
+      <span class="reply-time pull-left">
+        <a href="/p/f493bc6a949e/comments/1686403#comment-1686403">2016.03.11 15:13</a></span>
+      </span>
+    </div>
+  </div>
+
+      <div data-state="remaining-child-comments"></div>
+        <div class="comment-toolbar clearfix">
+            <span>
+              还有 <span class='count'>2</span> 条评论，
+              <a class="blue-link" data-id="1683176" data-max-id="1686445" data-action="load-children-comments" href="javascript:void(null)">展开查看</a>
+            </span>
+          <span class="pull-right">
+            <a data-id="1683176" class="reply" href="javascript:void(null)"><i class="fa fa-pencil"></i> 添加新回复</a>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1688988">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/dfc63a852abb">
+          <img src="http://cdn-qn0.jianshu.io/assets/default_avatar/15-57a3e97082943073824a3529187f31f9.jpg" alt="15" />
+</a>        <p>
+          <a class="author-name" href="/users/dfc63a852abb">毛毛虫面包</a>
+        </p>
+        <span class="reply-time">
+          <small>6 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1688988#comment-1688988">2016.03.11 20:02</a></span>
+      </div>
+      <p>比较通俗易懂</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1688988" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1540797">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1688988/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1688988/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1688988" data-nickname="毛毛虫面包" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1540797" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1688988.json">删除</a>
+        <a class="dismiss" data-commenter-id="1540797" data-remote="true" rel="nofollow" data-method="post" href="/comments/1688988/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1690378">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/7bcf2b8aec25">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1511170/deab29f37ba5?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/7bcf2b8aec25">Unc1eWang</a>
+        </p>
+        <span class="reply-time">
+          <small>7 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1690378#comment-1690378">2016.03.11 22:36</a></span>
+      </div>
+      <p>正好药学习runtime 楼主速度更新 希望能写一些实际项目中能够使用的例子</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1690378" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1511170">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1690378/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1690378/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1690378" data-nickname="Unc1eWang" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1511170" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1690378.json">删除</a>
+        <a class="dismiss" data-commenter-id="1511170" data-remote="true" rel="nofollow" data-method="post" href="/comments/1690378/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list ">
+        <div class="child-comment" id="comment-1691738" data-id="1691738">
+    <p>
+      <a class="blue-link" href="/users/d1ea95326c8c">明仔Su</a>：
+      <a href="/users/7bcf2b8aec25" class="maleskine-author" target="_blank" data-user-slug="7bcf2b8aec25">@Unc1eWang</a> 更新了
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      <div class="dropdown report" data-commenter-id="1644426">
+        <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+        <ul class="dropdown-menu arrow-top">
+          <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1691738/abuse_reports?type=ad">广告及垃圾信息</a></li>
+          <li><a data-toggle="modal" data-url="/comments/1691738/abuse_reports" href="#report-modal">其他</a></li>
+        </ul>
+      </div>
+      <a data-id="1690378" data-nickname="明仔Su" class="reply" href="javascript:void(null)">回复</a>
+      <a data-commenter-id="1644426" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1691738.json">删除</a>
+      <a class="dismiss" data-commenter-id="1644426" data-remote="true" rel="nofollow" data-method="post" href="/comments/1691738/dismiss">删除</a>
+      <span class="reply-time pull-left">
+        <a href="/p/f493bc6a949e/comments/1691738#comment-1691738">2016.03.12 01:43</a></span>
+      </span>
+    </div>
+  </div>
+
+      <div data-state="remaining-child-comments"></div>
+        <div class="comment-toolbar clearfix">
+          <span class="pull-right">
+            <a data-id="1690378" class="reply" href="javascript:void(null)"><i class="fa fa-pencil"></i> 添加新回复</a>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1697378">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/6e75e9c739ef">
+          <img src="http://cdn-qn0.jianshu.io/assets/default_avatar/8-77a9d346e43ea9a5ea58086d74909362.jpg" alt="8" />
+</a>        <p>
+          <a class="author-name" href="/users/6e75e9c739ef">fire1</a>
+        </p>
+        <span class="reply-time">
+          <small>8 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1697378#comment-1697378">2016.03.12 20:30</a></span>
+      </div>
+      <p>厉害</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1697378" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1597110">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1697378/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1697378/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1697378" data-nickname="fire1" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1597110" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1697378.json">删除</a>
+        <a class="dismiss" data-commenter-id="1597110" data-remote="true" rel="nofollow" data-method="post" href="/comments/1697378/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1711448">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/69b88a6f72ed">
+          <img src="http://upload.jianshu.io/users/upload_avatars/680076/f68ae07a144a.jpg?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/69b88a6f72ed">Raybon_lee</a>
+        </p>
+        <span class="reply-time">
+          <small>9 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1711448#comment-1711448">2016.03.14 09:54</a></span>
+      </div>
+      <p>写的不错，值得学习一下 <img src="http://assets.jianshu.io/assets/emojis/smile.png" alt=":smile:" title=":smile:" class="emoji" width="20" height="20"> </p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1711448" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="680076">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1711448/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1711448/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1711448" data-nickname="Raybon_lee" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="680076" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1711448.json">删除</a>
+        <a class="dismiss" data-commenter-id="680076" data-remote="true" rel="nofollow" data-method="post" href="/comments/1711448/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1753005">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/5036c055ae32">
+          <img src="http://cdn-qn0.jianshu.io/assets/default_avatar/2-65a6e6d032559f3c53475eb61d7ea573.jpg" alt="2" />
+</a>        <p>
+          <a class="author-name" href="/users/5036c055ae32">叶落丶知秋</a>
+        </p>
+        <span class="reply-time">
+          <small>10 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1753005#comment-1753005">2016.03.18 16:12</a></span>
+      </div>
+      <p>谢谢楼主</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1753005" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1764168">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1753005/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1753005/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1753005" data-nickname="叶落丶知秋" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1764168" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1753005.json">删除</a>
+        <a class="dismiss" data-commenter-id="1764168" data-remote="true" rel="nofollow" data-method="post" href="/comments/1753005/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1815149">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/dc1b31bab63d">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1723042/28abb3c853df.png?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/dc1b31bab63d">macfai</a>
+        </p>
+        <span class="reply-time">
+          <small>11 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1815149#comment-1815149">2016.03.24 11:22</a></span>
+      </div>
+      <p>赞一个</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1815149" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1723042">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1815149/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1815149/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1815149" data-nickname="macfai" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1723042" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1815149.json">删除</a>
+        <a class="dismiss" data-commenter-id="1723042" data-remote="true" rel="nofollow" data-method="post" href="/comments/1815149/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1841323">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/44499772f56e">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1689757/9ca78d57050a.jpg?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/44499772f56e">sunwindyLy</a>
+        </p>
+        <span class="reply-time">
+          <small>12 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/1841323#comment-1841323">2016.03.27 01:29</a></span>
+      </div>
+      <p>学习了，有点挑刺的赶脚，第二段里面最后一行的runtime单词拼错了</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1841323" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1689757">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/1841323/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/1841323/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="1841323" data-nickname="sunwindyLy" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1689757" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/1841323.json">删除</a>
+        <a class="dismiss" data-commenter-id="1689757" data-remote="true" rel="nofollow" data-method="post" href="/comments/1841323/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-2027681">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="/users/3a67e76a6935">
+          <img src="http://upload.jianshu.io/users/upload_avatars/1609713/435f2c35257d?imageMogr/thumbnail/90x90/quality/100" alt="100" />
+</a>        <p>
+          <a class="author-name" href="/users/3a67e76a6935">周鶏</a>
+        </p>
+        <span class="reply-time">
+          <small>13 楼 · </small>
+          <a href="/p/f493bc6a949e/comments/2027681#comment-2027681">2016.04.13 14:29</a></span>
+      </div>
+      <p>好！求更！</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="2027681" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        <div class="dropdown report" data-commenter-id="1609713">
+          <a class="report_comment" href="javascript:void(0)" data-toggle="dropdown">举报</a>
+          <ul class="dropdown-menu arrow-top">
+            <li><a data-type="json" data-remote="true" rel="nofollow" data-method="post" href="/comments/2027681/abuse_reports?type=ad">广告及垃圾信息</a></li>
+            <li><a data-toggle="modal" data-url="/comments/2027681/abuse_reports" href="#report-modal">其他</a></li>
+          </ul>
+        </div>
+
+        <a data-id="2027681" data-nickname="周鶏" class="reply" href="javascript:void(0)">回复</a>
+        <a data-commenter-id="1609713" data-confirm="确定要删除评论么?" class="delete" data-remote="true" rel="nofollow" data-method="delete" href="/notes/3170834/comments/2027681.json">删除</a>
+        <a class="dismiss" data-commenter-id="1609713" data-remote="true" rel="nofollow" data-method="post" href="/comments/2027681/dismiss">删除</a>
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+          <p class="signout-comment">
+    <a class="btn btn-info" data-signin-link="true" data-toggle="modal" href="/sign_in">
+      登录后发表评论
+</a>  </p>
+
+    </div>
+    <!-- -->
+
+  </div>
+
+  <script type='application/json' data-name='note'>
+    {"id":3170834,"abbr":"前言本来打算写一篇关于runtime的学习总结，无奈长篇大论不是我的风格，就像写申论一样痛苦，加之网上关于tuntime的文章多如牛毛，应该也够童子们学习的了，今天就随便聊聊我的理解吧。runtime是什么对于初学者，runtime如尼斯湖水怪一样，只存在于传说中，对于开发者，runtime是做好iOS开发，或是深刻掌握ObjectiveC所必需理解的东西。大公司面试都喜欢问：你对runtime熟悉吗？并不是runtime在开发中经常用到，我认为它是OC最核心的部分，只有掌握好它，你才能理解其底层的原理，而不是做一个只会造轮子的码农。要练成盖世神功，需先奠定自身深厚的...","slug":"f493bc6a949e","url":"http://www.jianshu.com/p/f493bc6a949e","image_url":"http://cwb.assets.jianshu.io/notes/images/3170834/weibo/image_4fd7889fee59.jpg","wordage":1733,"has_further_readings":false,"views_count":6125,"likes_count":107,"comments_count":18,"rewards_total_count":0}
+  </script>
+
+  <script type='application/json' data-name='uuid'>
+    {"uuid":"c46ac2b9-c035-4060-9eb1-9231e20deeaa"}
+  </script>
+
+  <script type='application/json' data-name='author'>
+    {"id":1644426,"nickname":"明仔Su","slug":"d1ea95326c8c","public_notes_count":18,"followers_count":1170,"total_likes_count":964,"is_current_user":false,"is_signed_author":false}
+  </script>
+
+
+    <div class="include-collection">
+      <div class="content">
+        <h5>被以下专题收入，发现更多相似内容：</h5>
+        <ul id="all-collections" class="unstyled collections-list">
+            <li>
+              <a class="avatar" href="/collection/NEt52a"><img src="http://upload.jianshu.io/collections/images/16/computer_guy.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/180" alt="180" /></a>              <div class="collections-info">
+                <h5>
+                  <a href="/collection/NEt52a">程序员</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>171.7K</span>
+  </div>
+
+                <p class="description">如果你是程序员，或者有一颗喜欢写程序的心，喜欢分享技术干货、项目经验、程序员日常囧事等等，欢迎投稿《程序员》专题。
+
+专题主编：小...</p>
+                <p>
+                  <a class="blue-link" href="/collection/NEt52a">23522篇文章</a> · 171774人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="/collection/bDHhpK"><img src="http://upload.jianshu.io/collections/images/47/rdn_4ddb18fddd2e9_%281%29.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/180" alt="180" /></a>              <div class="collections-info">
+                <h5>
+                  <a href="/collection/bDHhpK">首页投稿</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>129.5K</span>
+  </div>
+
+                <p class="description">玩转简书的第一步，从这个专题开始。
+
+想上首页热门榜么？好内容想被更多人看到么？来投稿吧！如果被拒也不要灰心哦～入选文章会进一个队...</p>
+                <p>
+                  <a class="blue-link" href="/collection/bDHhpK">100240篇文章</a> · 129588人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="/collection/1332c736fe39"><img src="http://upload.jianshu.io/collections/images/19466/think_different.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/180" alt="180" /></a>              <div class="collections-info">
+                <h5>
+                  <a href="/collection/1332c736fe39">iOS学习</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>5.1K</span>
+  </div>
+
+                <p class="description">学习从点滴开始 !
+(PS: 拒绝部分投稿的文章仅仅是由于专题内已收录相关知识点的文章, 并非是投稿的文章技术含量不够好, 望谅解.)</p>
+                <p>
+                  <a class="blue-link" href="/collection/1332c736fe39">4253篇文章</a> · 5105人关注
+                </p>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Modal -->
+    <div class="modal pay-modal text-center hide fade" id="pay-modal">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  </div>
+  <form id="new_reward" class="new_reward" target="_blank" action="/notes/3170834/rewards" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XWgTI+W2k40D8LwiiEnjM+hleQDAJziEd8jbxuXrSuw3Q1rIzPIKUsYeFzI1/mt3CrOU0Dgu3CBTowDy+A6nbQ==" />
+    <div class="modal-body">
+      <a href="/users/d1ea95326c8c">
+        <div class="avatar"><img src="http://upload.jianshu.io/users/upload_avatars/1644426/82362aeb7447.gif?imageMogr/thumbnail/90x90/quality/100" alt="100" /></div>
+</a>      <p><i class="fa fa-quote-left pull-left"></i>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！<i class="fa fa-quote-right pull-right"></i></p>
+      <div class="main-inputs text-left">
+        <div class="control-group">
+          <label for="reward_amount">打赏金额</label><i class="fa fa-yen"></i>
+          <input value="2.00" type="text" name="reward[amount_in_yuan]" id="reward_amount_in_yuan" />
+        </div>
+        <div class="control-group message">
+          <textarea placeholder="给Ta留言" name="reward[message]" id="reward_message">
+</textarea>
+        </div>
+      </div>
+      <div class="choose-pay text-left">
+        <h5>选择支付方式：</h5>
+        <div>
+          <label for="reward_channel_alipay">
+            <input type="radio" value="alipay" checked="checked" name="reward[channel]" id="reward_channel_alipay" />
+            <span class="alipay-bg"></span>
+</label>
+          
+          <label for="reward_channel_wx_pub_qr">
+            <input type="radio" value="wx_pub_qr" name="reward[channel]" id="reward_channel_wx_pub_qr" />
+            微信支付
+</label>        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button name="button" type="submit" class="btn btn-large btn-pay">立即支付</button>
+    </div>
+</form></div>
+
+    <div class="modal success-pay text-center hide fade" id="success-pay">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  </div>
+  <div class="modal-body">
+    <h3><i class="icon-ok"></i>打赏成功</h3>
+    <img src="http://cdn-qn0.jianshu.io/assets/complete-pay-25426877089eb23bd76d9d0e6aad89c1.png" alt="Complete pay" />
+  </div>
+  <div class="modal-footer">
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+  <div id="flash" class="hide"></div>
+  
+  <div id="view-mode-modal" tabindex="-1" class="modal hide read-modal" aria-hidden="false" data-js-module='view-mode-modal'>
+    <div class="btn-group change-background" data-toggle="buttons-radio">
+      <a class="btn btn-daytime active" data-mode="day" href="javascript:void(null);">
+        <i class="fa fa-sun-o"></i>
+</a>      <a class="btn btn-nighttime " data-mode="night" href="javascript:void(null);">
+        <i class="fa fa-moon-o"></i>
+</a>    </div>
+    <div class="btn-group change-font" data-toggle="buttons-radio">
+      <a class="btn font " data-font="font1" href="javascript:void(null);">宋体</a>
+      <a class="btn font hei active" data-font="font2" href="javascript:void(null);">黑体</a>
+    </div>
+    <div class="btn-group change-locale" data-toggle="buttons-radio">
+      <a class="btn font active" data-locale="zh-CN" href="javascript:void(null);">简</a>
+      <a class="btn font hei " data-locale="zh-TW" href="javascript:void(null);">繁</a>
+    </div>
+  </div>
+
+  
+
+  <script src="http://cdn-qn0.jianshu.io/assets/base-ded41764c207f7ff545c28c670922d25.js"></script>
+  
+  <script src="http://cdn-qn0.jianshu.io/assets/reading-base-0028299ec0c770293c0f07e2f338b48f.js"></script>
+  <script src="http://cdn-qn0.jianshu.io/assets/reading/module_sets/note_show-1805bf39f59948b52870922039360dbb.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35169517-1']);
+  _gaq.push(['_setCustomVar', 2, 'User Type', 'Visitor', 1 ]);
+  _gaq.push(['_trackPageview']);
+
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+</body>
+</html>

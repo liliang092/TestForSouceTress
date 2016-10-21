@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/push.js"></script><script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":6,"applicationTime":248,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=p(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function l(e,t){g[e]=p(e).concat(t)}function p(e){return g[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",m[n]=t,t in f||(f[t]=[])})}var g={},m={},w={on:l,emit:n,get:d,listeners:p,context:t,buffer:v};return w}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},l=t.exports=o();l.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(m,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=s.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document,l="addEventListener",p="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-984.min.js"},w=d&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[l]?(s[l]("DOMContentLoaded",i,!1),f[l]("load",r,!1)):(s[p]("onreadystatechange",o),f[p]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime有筒子在面试的时候，遇到这样一个问题：“如何給NSArray添加一个属性（不能使用继承）”，筒子立马蒙逼了，不能用继承，难道用分类？但是分类貌似只能添加方法不能添加属性啊，筒子百思不得其解，直到后来接触到了runtime才恍然大悟。什么是关联对象关联对象是指某个OC对象通过一个唯一的key连接到一个类的实例上。举个例子：xiaoming是Person类的一个实例，他的dog（一个OC对象）通过一根绳子（key）被他牵着散步，这可以说xiaoming和dog是关联起来的，当...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/c68cc81ef763">
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/3211081">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="iOS runtime实战应用：关联对象" property="twitter:title">
+  <meta content="前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime有筒子在面试的时候，遇到这样一个问题：“如何給NSArray添加一个属性（不能使用继承）”，筒子立马蒙逼了，不能用继承，难道用分类？但是分类貌似只能添加方法不能添加属性啊，筒子百思不得其解，直到后来接触到了runtime才恍然大悟。什么是关联对象关联对象是指某个OC对象通过一个唯一的key连接到一个类的实例上。举个例子：xiaoming是Person类的一个实例，他的dog（一个OC对象）通过一根绳子（key）被他牵着散步，这可以说xiaoming和dog是关联起来的，当..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/c68cc81ef763" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="iOS runtime实战应用：关联对象">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/c68cc81ef763">
+  <meta property="og:description" content="前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime有筒子在面试的时候，遇到这样一个问题：“如何給NSArray添加一个属性（不能使用继承）”，筒子立马蒙逼了，...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/3211081">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/3211081">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+  <title>iOS runtime实战应用：关联对象 - 简书</title>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="meB3EZfAkQUIuBivfSam4iQiOVnFtGfyIiwV8C1tm93zyz76voQI2s1Ws7/AkS6mxvTUiT29g1YGR87EMIh2XA==">
+  <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" media="all" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/base-28859e35d389885d08837bc971ff742c.css">
+
+    <link rel="stylesheet" media="all" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/reading-note-cb4c7fc3074ff1cb9e73649e96817782.css">
+  <link rel="stylesheet" media="all" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/base-read-mode-64acccf6966299cfa3d580140a2582fe.css">
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/modernizr-613ea63b5aa2f0e2a1946e9c28c8eedb.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if IE 8]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <link href="http://baijii-common.b0.upaiyun.com/icons/favicon.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-b426758a1fcfb30486f20fd073c3b8ec.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-feca4b183b9d29fd188665785dc7a7f1.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-ba757f1ad3421192ce7192170393d2b0.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/114-8dae53b3bcea3f06bb139e329d1edab3.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-fa315ee0177dba4c55d4f66d4129b47f.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-052f5799bec8fb3aa624bdc72ef5bd1d.png" sizes="152x152">
+
+<style type="text/css"></style></head>
+
+<body class="post output zh cn mac mozilla reader-day-mode reader-font2" data-js-module="note-show" data-locale="zh-CN">
+  
+  <div style="" class="navbar navbar-jianshu shrink">
+  <div class="dropdown">
+    <a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">
+      简
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li><a href="http://www.jianshu.com/"><i class="fa fa-home"></i> 首页</a></li>
+      <li><a href="http://www.jianshu.com/collections"><i class="fa fa-th"></i> 专题</a></li>
+      <li><a href="http://www.jianshu.com/user_invitations"><i class="fa fa-money"></i> 发钱啦</a></li>
+    </ul>
+  </div>
+</div>
+<div class="navbar-user">
+    <a class="login" data-signup-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_up">
+      <i class="fa fa-user"></i> 注册
+</a>    <a class="login" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+      <i class="fa fa-sign-in"></i> 登录
+</a>    <a class="daytime set-view-mode pull-right" href="javascript:void(0)"><i class="fa fa-moon-o"></i></a>
+</div>
+<div class="navbar navbar-jianshu expanded">
+  <div class="dropdown">
+      <a class="active logo" role="button" data-original-title="个人主页" data-container="div.expanded" href="http://www.jianshu.com/">
+        <b>简</b><i class="fa fa-home"></i><span class="title">首页</span>
+</a>      <a data-toggle="tooltip" data-placement="right" data-original-title="专题" data-container="div.expanded" href="http://www.jianshu.com/collections">
+        <i class="fa fa-th"></i><span class="title">专题</span>
+</a>    <a class="ad-selector" href="http://www.jianshu.com/apps">
+      <i class="fa fa-mobile"></i><span class="title">下载手机应用</span>
+</a>    <div class="ad-container ">
+      <div class="ad-pop">
+        <img class="ad-logo" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/114-8dae53b3bcea3f06bb139e329d1edab3.png" alt="114">
+        <p class="ad-title">简书</p>
+        <p class="ad-subtitle">交流故事，沟通想法</p>
+        <img class="ad-qrcode" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode">
+        <div>
+          <a class="ad-link" href="https://itunes.apple.com/cn/app/jian-shu/id888237539?ls=1&amp;mt=8">iOS</a>·
+          <a class="ad-link" href="http://downloads.jianshu.io/apps/haruki/JianShu-1.11.2.apk">Android</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="nav-user">
+      <a href="#view-mode-modal" data-toggle="modal"><i class="fa fa-font"></i><span class="title">显示模式</span></a>
+
+      <a class="signin" data-signin-link="true" data-toggle="modal" data-placement="right" data-original-title="登录" data-container="div.expanded" href="http://www.jianshu.com/sign_in">
+        <i class="fa fa-sign-in"></i><span class="title">登录</span>
+</a>    </div>
+  </div>
+
+  
+    <div class="fixed-btn">
+    <a class="go-top hide-go-top" href="#"> <i class="fa fa-angle-up"></i></a>
+    <a class="qrcode" data-target="#bottom-qrcode" data-toggle="modal" href="javascript:void(0)"><i class="fa fa-qrcode"></i></a>
+    <a data-original-title="写篇文章" class="writer" href="http://www.jianshu.com/writer#/" data-toggle="tooltip" data-placement="left" title=""><i class="fa fa-pencil"></i></a>
+    <!-- qrcode modal -->
+    <div id="bottom-qrcode" class="modal panel-modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <h4>下载简书移动应用</h4>
+      <div class="panel-body"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode"></div>
+    </div>
+  </div>
+
+
+  <div id="show-note-container">
+    
+<div class="post-bg" id="flag">
+  <div class="wrap-btn">
+    <!-- Notebook and collections button upper left -->
+      <div class="article-related pull-left">
+          <a class="collection-menu-btn" data-toggle="modal" data-target="#collection-menu" href="javascript:void(null);">
+            <i class="fa fa-th"></i>
+</a>          <a class="notebooks-menu-btn" data-toggle="modal" data-target="#notebooks-menu" href="javascript:void(null);"><i class="fa fa-list-ul"></i></a>
+        <div class="related-avatar-group activities"></div>
+      </div>
+    <!-- ******* -->
+
+      <a class="login" data-signup-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_up">
+    <i class="fa fa-user"></i> 注册
+</a>  <a class="login" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+    <i class="fa fa-sign-in"></i> 登录
+</a>
+
+    <!-- Buttons upper right -->
+    <!-- ******* -->
+  </div>
+
+  <div class="container">
+    <!-- Article activities for width under 768px -->
+    <div class="related-avatar-group activities"></div>
+      <div class="article">
+        <div class="preview">
+          <div class="author-info">
+              <div class="btn btn-small btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-plus"></i>  <span>添加关注</span></a>
+  </div>
+
+            <a class="avatar" href="http://www.jianshu.com/users/d1ea95326c8c">
+              <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/82362aeb7447.gif" alt="100">
+</a>            <span class="label">
+                作者
+            </span>
+            <a class="author-name blue-link" href="http://www.jianshu.com/users/d1ea95326c8c">
+              <span>明仔Su</span>
+</a>              <span>2016.03.11 20:29</span>
+            <div>
+              <span>写了35383字</span>，<span>被1170人关注</span>，<span>获得了964个喜欢</span>
+            </div>
+          </div>
+          <h1 class="title">iOS runtime实战应用：关联对象</h1>
+          <div class="meta-top">
+            <span class="wordage">字数962</span>
+            <span class="views-count">阅读2044</span>
+            <span class="comments-count">评论14</span>
+            <span class="likes-count">喜欢34</span>
+          </div>
+
+          <!-- Collection/Bookmark/Share for width under 768px -->
+          <div class="article-share"><a class="bookmark" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"> <i class="fa fa-bookmark-o"></i><span>收藏文章</span></a><span> <a href="javascript:void(null)" data-toggle="dropdown"><i class="fa fa-share-square-o"></i> 分享</a> <ul class="dropdown-menu arrow-top"> <li> <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1881139527',u=z||d.location,p=['&amp;url=',e(u),'&amp;title=',e(t||d.title),'&amp;source=',e(r),'&amp;sourceUrl=',e(l),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','http://cwb.assets.jianshu.io/notes/images/3211081/weibo/image_c3f6c86e6cd1.jpg',%20'%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@%E7%AE%80%E4%B9%A6%20%EF%BC%89','http://www.jianshu.com/p/c68cc81ef763','%E9%A1%B5%E9%9D%A2%E7%BC%96%E7%A0%81gb2312|utf-8%E9%BB%98%E8%AE%A4gb2312'));"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/weibo.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;title='+e('iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1')+'&amp;sel='+e(s)+'&amp;v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&amp;r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/douban.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshuio%20%EF%BC%89'),x=function(){if(!window.open(r,'tweibo','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/tweibo.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B'),x=function(){if(!window.open(r,'qzone','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/qzone.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://twitter.com/share?url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;text='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshucom%20%EF%BC%89')+'&amp;related='+e('jianshucom'),x=function(){if(!window.open(r,'twitter','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/twitter.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/c68cc81ef763',x=function(){if(!window.open(r,'facebook','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/facebook.png"> </a> </li> <li> <a href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://plus.google.com/share?url='+e('http://www.jianshu.com/p/c68cc81ef763'),x=function(){if(!window.open(r,'google_plus','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/google_plus.png"> </a> </li> <li> <a href=""> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/renren.png"> </a> </li> </ul></span></div>
+          <!-- -->
+
+          <div class="show-content"><h4>前言</h4>
+<p>在开始之前建议先阅读iOS runtime的基础理解篇：<a href="http://www.jianshu.com/p/f493bc6a949e/comments/1688988#comment-1688988" target="_blank">iOS内功篇：runtime</a></p>
+<p>有筒子在面试的时候，遇到这样一个问题：“如何給NSArray添加一个属性（不能使用继承）”，筒子立马蒙逼了，不能用继承，难道用分类？但是分类貌似只能添加方法不能添加属性啊，筒子百思不得其解，直到后来接触到了runtime才恍然大悟。</p>
+<h4>什么是关联对象</h4>
+<p>关联对象是指某个OC对象通过一个唯一的key连接到一个类的实例上。<br>举个例子：xiaoming是Person类的一个实例，他的dog（一个OC对象）通过一根绳子（key）被他牵着散步，这可以说xiaoming和dog是关联起来的，当然xiaoming可以牵着多个dog。</p>
+<h4>怎样关联对象</h4>
+<p>runtime提供給我们的方法：</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-comment">//关联对象</span>
+<span class="hljs-keyword">void</span> objc_setAssociatedObject(<span class="hljs-keyword">id</span> object, <span class="hljs-keyword">const</span> <span class="hljs-keyword">void</span> *key, <span class="hljs-keyword">id</span> value, objc_AssociationPolicy policy)
+<span class="hljs-comment">//获取关联的对象</span>
+<span class="hljs-keyword">id</span> objc_getAssociatedObject(<span class="hljs-keyword">id</span> object, <span class="hljs-keyword">const</span> <span class="hljs-keyword">void</span> *key)
+<span class="hljs-comment">//移除关联的对象</span>
+<span class="hljs-keyword">void</span> objc_removeAssociatedObjects(<span class="hljs-keyword">id</span> object)</code></pre>
+<p>变量说明：</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-keyword">id</span> object：被关联的对象（如xiaoming）
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">void</span> *key：关联的key，要求唯一
+<span class="hljs-keyword">id</span> value：关联的对象（如dog）
+objc_AssociationPolicy policy：内存管理的策略</code></pre>
+<p>objc_AssociationPolicy policy的enum值有：</p>
+<pre class="hljs objectivec"><code class="objectivec">OBJC_ASSO<span class="hljs-built_in">CIATION_ASSIGN</span> = <span class="hljs-number">0</span>,          
+OBJC_ASSO<span class="hljs-built_in">CIATION_RETAIN_NONATOMIC</span> = <span class="hljs-number">1</span>, 
+OBJC_ASSO<span class="hljs-built_in">CIATION_COPY_NONATOMIC</span> = <span class="hljs-number">3</span>,  
+OBJC_ASSO<span class="hljs-built_in">CIATION_RETAIN</span> = <span class="hljs-number">01401</span>,       
+OBJC_ASSO<span class="hljs-built_in">CIATION_COPY</span> = <span class="hljs-number">01403</span></code></pre>
+<p>当对象被释放时，会根据这个策略来决定是否释放关联的对象，当策略是RETAIN/COPY时，会释放（release）关联的对象，当是ASSIGN，将不会释放。<br>值得注意的是，我们不需要主动调用removeAssociated来接触关联的对象，如果需要解除指定的对象，可以使用setAssociatedObject置nil来实现。</p>
+<h4>关联对象的应用</h4>
+<p>1、添加公共属性</p>
+<p>这是最常用的一个模式，通常我们会在类声明里面添加属性，但是出于某些需求（如前言描述的情况），我们需要在分类里添加一个或多个属性的话，编译器就会报错，这个问题的解决方案就是使用runtime的关联对象。<br>应用举例：<br>我们需要自定义一个tabbar，并暴露公共的属性和方法。（读者们可以思考下使用继承和分类实现的优点和不足之处）</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">UITabBarController</span> (<span class="hljs-title">Custom</span>)</span>
+
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) SUCustomTabbar * customTabbar;
+
+<span class="hljs-keyword">@end</span></code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-preprocessor">#import <span class="hljs-title">"UITabBarController+Custom.h"</span></span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;objc/runtime.h&gt;</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">UITabBarController</span> (<span class="hljs-title">Custom</span>)</span>
+
+- (<span class="hljs-keyword">void</span>)setCustomTabbar:(<span class="hljs-built_in">UIView</span> *)customTabbar {
+    <span class="hljs-comment">//这里使用方法的指针地址作为唯一的key</span>
+    objc_setAssociatedObject(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">@selector</span>(customTabbar), customTabbar, OBJC_ASSO<span class="hljs-built_in">CIATION_RETAIN_NONATOMIC</span>);
+}
+
+- (<span class="hljs-built_in">UIView</span> *)customTabbar {
+    <span class="hljs-keyword">return</span> objc_getAssociatedObject(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">@selector</span>(customTabbar));
+}
+
+<span class="hljs-comment">//其他方法...</span>
+
+<span class="hljs-keyword">@end</span></code></pre>
+<p>这样，我们就可以像原生的tabbar一样使用自定义的tabbar：</p>
+<pre class="hljs objectivec"><code class="objectivec">[<span class="hljs-keyword">self</span><span class="hljs-variable">.tabBarController</span><span class="hljs-variable">.customTabbar</span> doSomgthig];</code></pre>
+<p>2、添加私有成员变量</p>
+<p>有时候，需要在分类中添加不想暴露在公共声明的成员变量。<br>应用举例：給按钮添加点击时间的回调</p>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">UIButton</span> (<span class="hljs-title">Callback</span>)</span>
+
+- (instancetype)initWithFrame:(<span class="hljs-built_in">CGRect</span>)frame callback:(<span class="hljs-keyword">void</span> (^)(<span class="hljs-built_in">UIButton</span> *))callbackBlock;
+
+<span class="hljs-keyword">@end</span></code></pre>
+<pre class="hljs objectivec"><code class="objectivec"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">UIButton</span> ()</span>
+
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">copy</span>) <span class="hljs-keyword">void</span> (^callbackBlock)(<span class="hljs-built_in">UIButton</span> * button);
+
+<span class="hljs-keyword">@end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">UIButton</span> (<span class="hljs-title">Callback</span>)</span>
+
+- (<span class="hljs-keyword">void</span> (^)(<span class="hljs-built_in">UIButton</span> *))callbackBlock {
+    <span class="hljs-keyword">return</span> objc_getAssociatedObject(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">@selector</span>(callbackBlock));
+}
+
+- (<span class="hljs-keyword">void</span>)setCallbackBlock:(<span class="hljs-keyword">void</span> (^)(<span class="hljs-built_in">UIButton</span> *))callbackBlock {
+    objc_setAssociatedObject(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">@selector</span>(callbackBlock), callbackBlock, OBJC_ASSO<span class="hljs-built_in">CIATION_COPY_NONATOMIC</span>);
+}
+
+- (instancetype)initWithFrame:(<span class="hljs-built_in">CGRect</span>)frame callback:(<span class="hljs-keyword">void</span> (^)(<span class="hljs-built_in">UIButton</span> *))callbackBlock {
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">self</span> = [<span class="hljs-keyword">super</span> initWithFrame:frame]) {
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.callbackBlock</span> = callbackBlock;
+        [<span class="hljs-keyword">self</span> addTarget:<span class="hljs-keyword">self</span> action:<span class="hljs-keyword">@selector</span>(didClickAction:) forControlEvents:<span class="hljs-built_in">UIControlEventTouchUpInside</span>];
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
+}
+
+- (<span class="hljs-keyword">void</span>)didClickAction:(<span class="hljs-built_in">UIButton</span> *)button {
+    <span class="hljs-keyword">self</span><span class="hljs-variable">.callbackBlock</span>(button);
+}
+
+<span class="hljs-keyword">@end</span></code></pre>
+<p>读者思考：以上代码是否会存在内存管理的问题</p>
+<p>3、关联KVO观察者<br>有时候我们在分类中使用KVO，推荐使用关联的对象作为观察者，尽量避免对象观察自身。<br>此应用模式不再举例，有兴趣的读者可以自行深入研究，或者将代码贴到评论处。</p>
+<h4>思考</h4>
+<p>1、关联对象更多的应用模式？<br>2、关联对象是否是解决问题的首选？<br>3、关联对象的副作用？</p>
+<p>欢迎大家交流探讨。</p>
+</div>
+        </div>
+      </div>
+
+      <div class="visitor_edit">
+        <!-- further readings -->
+        <div id="further-readings" data-user-slug="" data-user-nickname="">
+          <div id="further-reading-line" class="hide further-reading-line"></div>
+          <ul id="further-readings-list" class="reading-list unstyled"></ul>
+          <div id="further-reading-new" class="reading-edit">
+              <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+                <i class="fa fa-plus-circle"></i> 推荐拓展阅读
+</a>            <div id="further-reading-form"></div>
+          </div>
+        </div>
+        <div class="pull-right">
+          <!-- copyright -->
+          <div data-original-title="转载请联系作者获得授权，并标注“简书作者”。" class="author-copyright pull-right" data-toggle="tooltip" data-html="true" title="">
+            <a><i class="fa fa-copyright"></i> 著作权归作者所有</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reward / Support Author -->
+        <div class="support-author">
+          <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+            <a class="btn btn-pay" data-toggle="modal" href="#pay-modal">¥ 打赏支持</a>
+          <div class="avatar-list"></div>
+        </div>
+
+      <!-- article meta bottom -->
+      <div class="meta-bottom clearfix">
+        <!--  Like Button -->
+        <div class="like ">
+            <div class="like-button">
+              <a id="like-note" class="like-content" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+                <i class="fa fa-heart-o"></i>  喜欢
+</a></div>          <span data-original-title="查看所有喜欢的用户" id="likes-count" data-toggle="tooltip" data-placement="right" title="">34</span>        </div>
+        <!--  share group -->
+        <div class="share-group pull-right">
+          <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=1881139527',u=z||d.location,p=['&amp;url=',e(u),'&amp;title=',e(t||d.title),'&amp;source=',e(r),'&amp;sourceUrl=',e(l),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','http://cwb.assets.jianshu.io/notes/images/3211081/weibo/image_c3f6c86e6cd1.jpg',%20'%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@%E7%AE%80%E4%B9%A6%20%EF%BC%89','http://www.jianshu.com/p/c68cc81ef763','%E9%A1%B5%E9%9D%A2%E7%BC%96%E7%A0%81gb2312|utf-8%E9%BB%98%E8%AE%A4gb2312'));" data-name="weibo">
+            <i class="fa fa-weibo"></i><span>分享到微博</span>
+          </a>
+          <a data-toggle="modal" href="#share-weixin-modal" data-name="weixin">
+            <i class="fa fa-weixin"></i><span>分享到微信</span>
+          </a>
+          <div class="more">
+            <a href="javascript:void(0)" data-toggle="dropdown">更多分享<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu arrow-top">
+                <li><a href="http://cwb.assets.jianshu.io/notes/images/3211081/weibo/image_c3f6c86e6cd1.jpg" target="_blank" data-name="changweibo"><i class="fa fa-arrow-circle-o-down"></i> 下载长微博图片</a></li>
+                <li>
+                  <a data-name="tweibo" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshuio%20%EF%BC%89'),x=function(){if(!window.open(r,'tweibo','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/tweibo.png" alt="Tweibo"> 分享到腾讯微博
+</a>                </li>
+                <li>
+                  <a data-name="qzone" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;title='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B'),x=function(){if(!window.open(r,'qzone','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/qzone.png" alt="Qzone"> 分享到QQ空间
+</a>                </li>
+                <li>
+                  <a data-name="twitter" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://twitter.com/share?url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;text='+e('%E6%8E%A8%E8%8D%90%20%E6%98%8E%E4%BB%94Su%20%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%8AiOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%E3%80%8B%EF%BC%88%20%E5%88%86%E4%BA%AB%E8%87%AA%20@jianshucom%20%EF%BC%89')+'&amp;related='+e('jianshucom'),x=function(){if(!window.open(r,'twitter','toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/twitter.png" alt="Twitter"> 分享到Twitter
+</a>                </li>
+                <li>
+                  <a data-name="facebook" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/c68cc81ef763',x=function(){if(!window.open(r,'facebook','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/facebook.png" alt="Facebook"> 分享到Facebook
+</a>                </li>
+                <li>
+                  <a data-name="google_plus" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,r='https://plus.google.com/share?url='+e('http://www.jianshu.com/p/c68cc81ef763'),x=function(){if(!window.open(r,'google_plus','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/google_plus.png" alt="Google plus"> 分享到Google+
+</a>                </li>
+                <li>
+                  <a data-name="douban" href="javascript:void(function(){var%20d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e('http://www.jianshu.com/p/c68cc81ef763')+'&amp;title='+e('iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1')+'&amp;sel='+e(s)+'&amp;v=1',x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330'))location.href=r+'&amp;r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()">
+                    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/douban.png" alt="Douban"> 分享到豆瓣
+</a>                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="share-weixin-modal" class="modal hide fade share-weixin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div title="http://www.jianshu.com/p/c68cc81ef763?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weixin" class="modal-body">
+    <h5>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h5>
+  <canvas style="display: none;" height="170" width="170"></canvas><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACqCAYAAAA9dtSCAAAHmElEQVR4nO2dwZIrMQgD8/8/ve/yTptksJDwONmmak42IEE71zwej8fPju8qqrvq+WrfKqb8urUndV1pvNnD/QMCVEAFVCMA9VBQk+GAeteAXE+OByWSMF7VVnUkA1ABdbm2qiMZgAqoy7VVHckAVEBdrq3qSIYEqrPkJKh3LWbqQVQeXH+px6j2UXQ0cgEVUNfmUfVRdACqGIC6Po+qj6IDUMUA1PV5VH0UHX8C1FNqKfeVSD5EtXZyx4B6SC3lvhKACqiACqiaiW6fk2op95UA1ENBnYykDvURdD+375QHdbaAKgSg5jyoswVUIQA150Gd7TZQnUgPP7GkFV2KxuQ8HB2OJyeStaragCrcBdS5WlVtQBXuAupcrao2oAp3AXWuVlX7oQ4hBZACsXJ+V27S06fOY/gD1ERu0tOnzgNQD13MlKdPnQegHrqYKU+fOo/R76n7ATE5oEldqVxXc/cHw53PZBypDFAB9XccqQxQAfV3HKkMUAH1dzwUkVemVEB2gXhKrbs+ZYfqXtRzJwAVUNt7Uc+dAFRAbe9FPXfCAlUZkFLL6evqSvWtajl9HQ9OJPek9gLUkF9ABVRABVRATfkF1GE+HGFSI2NRk7oUzYqnyVwnUg++BZvxsAFV0AyogCr1BdR+AKoo0ukLqP34SlAdIak67sAmF6H0dXIdQBzdrk4LTEAF1FQuoAIqoAIqoKZyt4LqCHNE7wpnQG5tJXfX0pP+J2u9qA2ogAqogLqYC6hlbUAF1A8AdbVRZTJpwgFG6Zv+nL7J2PXYJuNpRpeHgAqoNwWgAuqlzlNCAlUpVjVSckvRh8I1NY+dkCt9FU92ravCipFKpJKbNAyo/QDUIjdpGFD7AahFbtIwoPbjKFCTxaaGkOyzK5xHPwmEqzPVV9UBqEMBqIBq9dkVgAqoVp9dAagbQXWEKbUaot+eOwNzl5pa3M6HmvyBmNQNqKG+6nwcHUoAKqBa83F0KAGogGrNx9GhxFeC6hRTGxeixkBVcpPzSAIzCX1qp6qnhV6AulLXnQegAqpUC1D7HiY9LfTqD+iuxTiwdSF+M7zY4+tqVJeuzMcN1UfxASqgvj53A1ABFVABFVCPBHWqcZXr9FV0OeGCO/VgkrBN7iVZC1CNvo4OQNVqAarR19EBqFotQDX6OjoAVav1kC4Lw3UWofZ1BrDDnzqDnbPdNQO179O5dPkQE4AKqIAKqEfs+OlcunyICUD946DKyaGBVH2dJbu1UxDcletEEnq3N6AC6lhfQAXULQGoRS6g5nKdOBZUdTEKEMlcpVZV24F6ytMkmMmHmZxH+SnJjpBkrlKrqg2ogAqoTU+A+vLrC3eGmQQmpdtdjOK3Oxv3wUxpVn0odwEVUGOaVR/KXUAF1Jhm1YdyF1ABNaZZ9aHcLUF1hExCrmhSNE/5c2fw1/q+0QKogHpW3zdaABVQz+r7RgugAupZfd9omQFmZyiwTeW6S78r1wVotVegFqACKqBuCUDt5wLqxgDUfu7HgDol5JRhTi7mqpeT687D8Zvs6/R5ul8qXyw+KRpQARVQgwGog6CmAHEGopqYHIjjcReok7nduh3P4jwAdTUAFVArkYAKqIC6GoB6I6hW8iYTn/hgHB0OXKoHJTfpQa5lJQMqoDY9yLWsZEAF1KYHuZaVDKiA2vQg15IrLBaWhdy0VOfxJR/uXT8CV+Hu5epMns8ppgAVUAEVUFsBqIXwZC6g9uMoUE8R4tSagsfRlYyds3R0ub2LD1ABFVABNRCACqiA+omgqo1TotWB7AJGrZ3ypOY6d6d2mvYEqEbfq/tObTXXuQuoginVBKACamwxkzDtGm7ygSj3k0tXZzm1F+fu//uACqiACqiLfbt3q/moswRUQAXU5t2fnx/tn/tcI6u1VR1Tjy3pYWekfiTUvTi1Sg+OYScAdS4AFVDbHnYGoAJq28PO+HOgKsXKRsGlTtWq+ji1lNo7Pe36wXA8AKrowaml1AZUQLU8OLWU2oAKqJYHp5ZSG1ALUHcKcWKqd9KjA7mr48QfAfURPJ2vFgZUQJ2sBahGXUA9CNTUMBuN27WUAToAOA/Xeeg7+56q48UHqN2+3wjIKTpefIDa7fuNgJyi48UHqN2+3wjIKTqevsstD4YD0C5N6rlSW6k1OQ8FVKe2qgNQBU3quVIbUK91AKqgST1XagPqtQ5AFTSp50ptQL3W8eJbB8b5usNS70/CpICsekz5d3V0+6ycd/n4XwtQ3+UCKqC2h1fdB1RABVRAtc5joCZj11JdULsguo/g6tztm/Lk+K08NTwAKqACKqA2PLl9AdVodHXu5ALqnKePAfXKcHKpaq1kbSU3+Sm9nHBne4J/QC3ilEU5AaiACqh/AVRnMVMDSkYSELV2926ly8l1Hx+gAuqyLicXUAHV0qHocnIBFVAtHYouJ/djQe3eVXUloVZiZ+2r86Tuu3L/f4AKqGu678oFVECVdN+VC6iAKum+K7cE1YkkqOp519OuB5CeteLprlquDkBdrAOogAqogwGoQWGAOhdfCerOxSRzkwNRwnmMiofkQ03uJfkYF3QBajcAFVABFVB/nwNqNwB1H6j/ANhi5ods+UNDAAAAAElFTkSuQmCC" style="display: block;"></div>
+</div>
+
+      
+      <div id="notebooks-menu" class="panel notebooks-menu arrow-top modal hide fade"><img class="loader-tiny" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/tiny.gif" alt="Tiny"></div>
+      <div id="collection-menu" class="panel collection-menu arrow-top modal hide fade"><img class="loader-tiny" src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/tiny.gif" alt="Tiny"></div>
+      
+      <div id="likes-modal" class="modal modal_new support_list-modal fullscreen hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>喜欢的用户</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="unstyled users">
+        <li data-user-id="1932663"> <a class="avatar" href="http://www.jianshu.com/users/f8ca0eb7478c"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/b4c48cb97dc4.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/f8ca0eb7478c">代码</a> <span class="time">2016.09.02 10:16</span></li><li data-user-id="2202126"> <a class="avatar" href="http://www.jianshu.com/users/4a2885fb21f4"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/d46b378f3c6b.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/4a2885fb21f4">蓝千伟</a> <span class="time">2016.08.11 12:36</span></li><li data-user-id="301530"> <a class="avatar" href="http://www.jianshu.com/users/f00ad5c62f05"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/b75ef971e556.png"> </a> <a class="blue-link" href="http://www.jianshu.com/users/f00ad5c62f05">Abnerzj</a> <span class="time">2016.08.04 18:40</span></li><li data-user-id="2105941"> <a class="avatar" href="http://www.jianshu.com/users/fccfc62de9cb"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/58eb71465e7a.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/fccfc62de9cb">敲来瞧去</a> <span class="time">2016.06.28 15:44</span></li><li data-user-id="1165585"> <a class="avatar" href="http://www.jianshu.com/users/8c996d6e4f65"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/bedcaae4f6e7.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/8c996d6e4f65">南城琉璃月</a> <span class="time">2016.06.17 13:18</span></li><li data-user-id="2093496"> <a class="avatar" href="http://www.jianshu.com/users/8d586f6ae765"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/8-77a9d346e43ea9a5ea58086d74909362.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/8d586f6ae765">左边蛋痒</a> <span class="time">2016.06.16 20:54</span></li><li data-user-id="1963653"> <a class="avatar" href="http://www.jianshu.com/users/603010f3888b"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/4529eb8cabc1.png"> </a> <a class="blue-link" href="http://www.jianshu.com/users/603010f3888b">JollyWeirdo</a> <span class="time">2016.05.25 21:20</span></li><li data-user-id="2115901"> <a class="avatar" href="http://www.jianshu.com/users/e04ff2d8a179"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/15-57a3e97082943073824a3529187f31f9.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/e04ff2d8a179">JamesYi</a> <span class="time">2016.05.24 14:52</span></li><li data-user-id="1511846"> <a class="avatar" href="http://www.jianshu.com/users/eef041160b7a"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/4f09db623540.png"> </a> <a class="blue-link" href="http://www.jianshu.com/users/eef041160b7a">luowanglin</a> <span class="time">2016.05.08 10:22</span></li><li data-user-id="678917"> <a class="avatar" href="http://www.jianshu.com/users/32e2f0bdeeb9"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/3d0b3d2757bc.JPG"> </a> <a class="blue-link" href="http://www.jianshu.com/users/32e2f0bdeeb9">JK_</a> <span class="time">2016.04.30 10:14</span></li><li data-user-id="728182"> <a class="avatar" href="http://www.jianshu.com/users/014f97555b69"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/e86bf74adacf.png"> </a> <a class="blue-link" href="http://www.jianshu.com/users/014f97555b69">Tieria</a> <span class="time">2016.04.19 12:14</span></li><li data-user-id="1689995"> <a class="avatar" href="http://www.jianshu.com/users/d080f310d536"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/1e8ff6034ac9.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/d080f310d536">行藏在我_888</a> <span class="time">2016.04.06 19:56</span></li><li data-user-id="1859162"> <a class="avatar" href="http://www.jianshu.com/users/824302164372"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/f136c2a8097c.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/824302164372">MaxWellPro</a> <span class="time">2016.04.05 16:04</span></li><li data-user-id="1668866"> <a class="avatar" href="http://www.jianshu.com/users/112a861cd2d4"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/e802c31176d7.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/112a861cd2d4">把過去塵封</a> <span class="time">2016.04.02 01:25</span></li><li data-user-id="1009974"> <a class="avatar" href="http://www.jianshu.com/users/301a7fcfdabb"> <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/e8b79be14585.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/301a7fcfdabb">EricCartman</a> <span class="time">2016.03.24 16:29</span></li><a class="more hidden" data-max-id="15166537" href="javascript:void(null);"><i class="fa fa-ellipsis-h"></i></a></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Comments -->
+    <div id="comments" class="comment-list clearfix">
+        <div class="comment-head clearfix">
+          14条评论
+          <span class="order">
+            （
+            <a data-order="asc" class="active" href="javascript:void(0)">按时间正序</a>·
+            <a data-order="desc" href="javascript:void(0)">按时间倒序</a>·
+            <a data-order="likes_count" href="javascript:void(0)">按喜欢排序</a>
+            ）
+          </span>
+            <a class="goto-comment pull-right" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+              <i class="fa fa-pencil"></i>添加新评论
+</a>        </div>
+        <div id="comment-list">
+
+
+<div class="note-comment clearfix" id="comment-1702539">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/7bcf2b8aec25">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/deab29f37ba5.jpg" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/7bcf2b8aec25">Unc1eWang</a>
+        </p>
+        <span class="reply-time">
+          <small>2 楼 · </small>
+          <a href="http://www.jianshu.com/p/c68cc81ef763/comments/1702539#comment-1702539">2016.03.13 12:37</a></span>
+      </div>
+      <p>收到更新 立马过来学习</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1702539" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="1702539" data-nickname="Unc1eWang" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1817535">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/38e282c64235">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/1-cd1d6dd91a96ca16fafcc8896bbc7b32.jpg" alt="1">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/38e282c64235">5566_1991</a>
+        </p>
+        <span class="reply-time">
+          <small>3 楼 · </small>
+          <a href="http://www.jianshu.com/p/c68cc81ef763/comments/1817535#comment-1817535">2016.03.24 15:31</a></span>
+      </div>
+      <p>添加私有变量那块的demo，应该会造成内存泄露。因为UIButton的实例持有callbackBlock这个block，在
+button的点击事件中这个block又持有了button本身，造成引用循环，会造成内存泄露。另外博主写blog很有意思哈，还有“课后习
+题”...</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1817535" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="1817535" data-nickname="5566_1991" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list ">
+        <div class="child-comment" id="comment-1879839" data-id="1879839">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/359b31612bed">李小虎</a>：
+      <a href="http://www.jianshu.com/users/38e282c64235" class="maleskine-author" target="_blank" data-user-slug="38e282c64235">@5566_1991</a> 这个内存泄漏应该怎么解决？
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="1817535" data-nickname="李小虎" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/c68cc81ef763/comments/1879839#comment-1879839">2016.03.30 16:37</a></span>
+      
+    </div>
+  </div>
+  <div class="child-comment" id="comment-1993031" data-id="1993031">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/62e75cac437c">BowmanZone</a>：
+      <a href="http://www.jianshu.com/users/38e282c64235" class="maleskine-author" target="_blank" data-user-slug="38e282c64235">@5566_1991</a> 你的意思是在self.callBackBlock(button)这里会对循环引用造成内存泄漏吗？
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="1817535" data-nickname="BowmanZone" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/c68cc81ef763/comments/1993031#comment-1993031">2016.04.10 17:05</a></span>
+      
+    </div>
+  </div>
+  <div class="child-comment" id="comment-1993034" data-id="1993034">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/62e75cac437c">BowmanZone</a>：
+      <a href="http://www.jianshu.com/users/359b31612bed" class="maleskine-author" target="_blank" data-user-slug="359b31612bed">@李小虎</a> 有什么好的建议？
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="1817535" data-nickname="BowmanZone" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/c68cc81ef763/comments/1993034#comment-1993034">2016.04.10 17:05</a></span>
+      
+    </div>
+  </div>
+
+      <div data-state="remaining-child-comments"></div>
+        <div class="comment-toolbar clearfix">
+            <span>
+              还有 <span class="count">3</span> 条评论，
+              <a class="blue-link" data-id="1817535" data-max-id="3566356" data-action="load-children-comments" href="javascript:void(null)">展开查看</a>
+            </span>
+          <span class="pull-right">
+            <a data-id="1817535" class="reply" href="javascript:void(null)"><i class="fa fa-pencil"></i> 添加新回复</a>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-1993048">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/62e75cac437c">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/c527801c1ebe.png" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/62e75cac437c">BowmanZone</a>
+        </p>
+        <span class="reply-time">
+          <small>4 楼 · </small>
+          <a href="http://www.jianshu.com/p/c68cc81ef763/comments/1993048#comment-1993048">2016.04.10 17:06</a></span>
+      </div>
+      <p>看了师兄的文章，真的是拨开云雾见青天啊，关联对象这个名词用的真的是恰到好处。</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="1993048" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="1993048" data-nickname="BowmanZone" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-2243368">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/fb05493c0585">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/59ef2332e07d.jpg" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/fb05493c0585">别问为什么</a>
+        </p>
+        <span class="reply-time">
+          <small>5 楼 · </small>
+          <a href="http://www.jianshu.com/p/c68cc81ef763/comments/2243368#comment-2243368">2016.05.03 14:31</a></span>
+      </div>
+      <p>“如何給NSArray添加一个属性（不能使用继承）”   <br><br>分类可以添加属性的吧....</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="2243368" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="2243368" data-nickname="别问为什么" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list ">
+        <div class="child-comment" id="comment-2335316" data-id="2335316">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/ef23b589c417">不管you多苦</a>：
+      <a href="http://www.jianshu.com/users/fb05493c0585" class="maleskine-author" target="_blank" data-user-slug="fb05493c0585">@别问为什么</a> 分类添加，还是要用runtime！另外我想问一下，继承怎么实现的！ <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/smile.png" alt=":smile:" title=":smile:" class="emoji" height="20" width="20"> 
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="2243368" data-nickname="不管you多苦" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/c68cc81ef763/comments/2335316#comment-2335316">2016.05.11 15:58</a></span>
+      
+    </div>
+  </div>
+  <div class="child-comment" id="comment-3535601" data-id="3535601">
+    <p>
+      <a class="blue-link" href="http://www.jianshu.com/users/aa553bfceb8e">昨天还很帅</a>：
+      <a href="http://www.jianshu.com/users/ef23b589c417" class="maleskine-author" target="_blank" data-user-slug="ef23b589c417">@不管you多苦</a> 自定义一个类SubArray,让SubArray继承于NSArray,在SubArray中可以添加属性
+    </p>
+    <div class="child-comment-footer text-right clearfix">
+      
+      <a data-id="2243368" data-nickname="昨天还很帅" class="reply" href="javascript:void(null)">回复</a>
+      
+      
+      <span class="reply-time pull-left">
+        <a href="http://www.jianshu.com/p/c68cc81ef763/comments/3535601#comment-3535601">2016.08.09 13:47</a></span>
+      
+    </div>
+  </div>
+
+      <div data-state="remaining-child-comments"></div>
+        <div class="comment-toolbar clearfix">
+          <span class="pull-right">
+            <a data-id="2243368" class="reply" href="javascript:void(null)"><i class="fa fa-pencil"></i> 添加新回复</a>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-2774472">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/6478cd702bfc">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/18c3c21b1f53.png" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/6478cd702bfc">枫宇翔</a>
+        </p>
+        <span class="reply-time">
+          <small>6 楼 · </small>
+          <a href="http://www.jianshu.com/p/c68cc81ef763/comments/2774472#comment-2774472">2016.06.16 09:51</a></span>
+      </div>
+      <p>私有成员变量那边有内存泄露问题</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="2774472" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="2774472" data-nickname="枫宇翔" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+<div class="note-comment clearfix" id="comment-3782461">
+  <div class="content">
+      <div class="meta-top">
+        <a class="avatar" href="http://www.jianshu.com/users/e4fa7826e618">
+          <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/887135301e29.png" alt="100">
+</a>        <p>
+          <a class="author-name" href="http://www.jianshu.com/users/e4fa7826e618">businessios</a>
+        </p>
+        <span class="reply-time">
+          <small>7 楼 · </small>
+          <a href="http://www.jianshu.com/p/c68cc81ef763/comments/3782461#comment-3782461">2016.08.23 00:26</a></span>
+      </div>
+      <p>那个SUCustomTabbar是哪来的</p>
+      <div class="comment-footer clearfix text-right">
+        <a data-id="3782461" class="like pull-left" href="javascript:void(0)">
+          <i class="fa fa-heart-o"></i>喜欢<span>(0)</span>
+</a>        
+
+        <a data-id="3782461" data-nickname="businessios" class="reply" href="javascript:void(0)">回复</a>
+        
+        
+      </div>
+    <div class="child-comment-list hide">
+      
+      <div data-state="remaining-child-comments"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+          <p class="signout-comment">
+    <a class="btn btn-info" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+      登录后发表评论
+</a>  </p>
+
+    </div>
+    <!-- -->
+
+  </div>
+
+  <script type="application/json" data-name="note">
+    {"id":3211081,"abbr":"前言在开始之前建议先阅读iOSruntime的基础理解篇：iOS内功篇：runtime有筒子在面试的时候，遇到这样一个问题：“如何給NSArray添加一个属性（不能使用继承）”，筒子立马蒙逼了，不能用继承，难道用分类？但是分类貌似只能添加方法不能添加属性啊，筒子百思不得其解，直到后来接触到了runtime才恍然大悟。什么是关联对象关联对象是指某个OC对象通过一个唯一的key连接到一个类的实例上。举个例子：xiaoming是Person类的一个实例，他的dog（一个OC对象）通过一根绳子（key）被他牵着散步，这可以说xiaoming和dog是关联起来的，当...","slug":"c68cc81ef763","url":"http://www.jianshu.com/p/c68cc81ef763","image_url":"http://cwb.assets.jianshu.io/notes/images/3211081/weibo/image_c3f6c86e6cd1.jpg","wordage":962,"has_further_readings":false,"views_count":2044,"likes_count":34,"comments_count":14,"rewards_total_count":0}
+  </script>
+
+  <script type="application/json" data-name="uuid">
+    {"uuid":"f3995cf0-0993-43d3-a22d-b325211c1d0f"}
+  </script>
+
+  <script type="application/json" data-name="author">
+    {"id":1644426,"nickname":"明仔Su","slug":"d1ea95326c8c","public_notes_count":18,"followers_count":1170,"total_likes_count":964,"is_current_user":false,"is_signed_author":false}
+  </script>
+
+
+    <div class="include-collection">
+      <div class="content">
+        <h5>被以下专题收入，发现更多相似内容：</h5>
+        <ul id="all-collections" class="unstyled collections-list">
+            <li>
+              <a class="avatar" href="http://www.jianshu.com/collection/NEt52a"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/computer_guy.jpg" alt="180"></a>              <div class="collections-info">
+                <h5>
+                  <a href="http://www.jianshu.com/collection/NEt52a">程序员</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>171.7K</span>
+  </div>
+
+                <p class="description">如果你是程序员，或者有一颗喜欢写程序的心，喜欢分享技术干货、项目经验、程序员日常囧事等等，欢迎投稿《程序员》专题。
+
+专题主编：小...</p>
+                <p>
+                  <a class="blue-link" href="http://www.jianshu.com/collection/NEt52a">23522篇文章</a> · 171774人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="http://www.jianshu.com/collection/bDHhpK"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/rdn_4ddb18fddd2e9_1.jpg" alt="180"></a>              <div class="collections-info">
+                <h5>
+                  <a href="http://www.jianshu.com/collection/bDHhpK">首页投稿</a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>129.5K</span>
+  </div>
+
+                <p class="description">玩转简书的第一步，从这个专题开始。
+
+想上首页热门榜么？好内容想被更多人看到么？来投稿吧！如果被拒也不要灰心哦～入选文章会进一个队...</p>
+                <p>
+                  <a class="blue-link" href="http://www.jianshu.com/collection/bDHhpK">100240篇文章</a> · 129588人关注
+                </p>
+              </div>
+            </li>
+            <li>
+              <a class="avatar" href="http://www.jianshu.com/collection/2ffaa203eb6a"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/1427906959.png" alt="180"></a>              <div class="collections-info">
+                <h5>
+                  <a href="http://www.jianshu.com/collection/2ffaa203eb6a">iOS 开发 </a>
+                </h5>
+                
+  <div class="btn btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-fw fa-plus"></i>  <span>添加关注</span></a>
+    <span>6.5K</span>
+  </div>
+
+                <p class="description"></p>
+                <p>
+                  <a class="blue-link" href="http://www.jianshu.com/collection/2ffaa203eb6a">7476篇文章</a> · 6549人关注
+                </p>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Modal -->
+    <div class="modal pay-modal text-center hide fade" id="pay-modal">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <form id="new_reward" class="new_reward" target="_blank" action="/notes/3211081/rewards" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="meB3EZfAkQUIuBivfSam4iQiOVnFtGfyIiwV8C1tm93zyz76voQI2s1Ws7/AkS6mxvTUiT29g1YGR87EMIh2XA==" type="hidden">
+    <div class="modal-body">
+      <a href="http://www.jianshu.com/users/d1ea95326c8c">
+        <div class="avatar"><img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/82362aeb7447.gif" alt="100"></div>
+</a>      <p><i class="fa fa-quote-left pull-left"></i>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！<i class="fa fa-quote-right pull-right"></i></p>
+      <div class="main-inputs text-left">
+        <div class="control-group">
+          <label for="reward_amount">打赏金额</label><i class="fa fa-yen"></i>
+          <input value="2.00" name="reward[amount_in_yuan]" id="reward_amount_in_yuan" type="text">
+        </div>
+        <div class="control-group message">
+          <textarea placeholder="给Ta留言" name="reward[message]" id="reward_message"></textarea>
+        </div>
+      </div>
+      <div class="choose-pay text-left">
+        <h5>选择支付方式：</h5>
+        <div>
+          <label for="reward_channel_alipay">
+            <div style="position: relative;" class="iradio_minimal checked"><input style="position: absolute; opacity: 0;" value="alipay" checked="checked" name="reward[channel]" id="reward_channel_alipay" type="radio"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div>
+            <span class="alipay-bg"></span>
+</label>
+          
+          <label for="reward_channel_wx_pub_qr">
+            <div style="position: relative;" class="iradio_minimal"><input style="position: absolute; opacity: 0;" value="wx_pub_qr" name="reward[channel]" id="reward_channel_wx_pub_qr" type="radio"><ins style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; opacity: 0;" class="iCheck-helper"></ins></div>
+            微信支付
+</label>        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button name="button" type="submit" class="btn btn-large btn-pay">立即支付</button>
+    </div>
+</form></div>
+
+    <div class="modal success-pay text-center hide fade" id="success-pay">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+    <h3><i class="icon-ok"></i>打赏成功</h3>
+    <img src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/complete-pay-25426877089eb23bd76d9d0e6aad89c1.png" alt="Complete pay">
+  </div>
+  <div class="modal-footer">
+    
+  </div>
+</div>
+
+</div>
+
+  </div>
+  <div id="flash" class="hide"></div>
+  
+  <div id="view-mode-modal" tabindex="-1" class="modal hide read-modal" aria-hidden="false" data-js-module="view-mode-modal">
+    <div class="btn-group change-background" data-toggle="buttons-radio">
+      <a class="btn btn-daytime active" data-mode="day" href="javascript:void(null);">
+        <i class="fa fa-sun-o"></i>
+</a>      <a class="btn btn-nighttime " data-mode="night" href="javascript:void(null);">
+        <i class="fa fa-moon-o"></i>
+</a>    </div>
+    <div class="btn-group change-font" data-toggle="buttons-radio">
+      <a class="btn font " data-font="font1" href="javascript:void(null);">宋体</a>
+      <a class="btn font hei active" data-font="font2" href="javascript:void(null);">黑体</a>
+    </div>
+    <div class="btn-group change-locale" data-toggle="buttons-radio">
+      <a class="btn font active" data-locale="zh-CN" href="javascript:void(null);">简</a>
+      <a class="btn font hei " data-locale="zh-TW" href="javascript:void(null);">繁</a>
+    </div>
+  </div>
+
+  
+
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/base-ded41764c207f7ff545c28c670922d25.js"></script>
+  
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/reading-base-0028299ec0c770293c0f07e2f338b48f.js"></script>
+  <script src="iOS%20runtime%E5%AE%9E%E6%88%98%E5%BA%94%E7%94%A8%EF%BC%9A%E5%85%B3%E8%81%94%E5%AF%B9%E8%B1%A1%20-%20%E7%AE%80%E4%B9%A6_files/note_show-1805bf39f59948b52870922039360dbb.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35169517-1']);
+  _gaq.push(['_setCustomVar', 2, 'User Type', 'Visitor', 1 ]);
+  _gaq.push(['_trackPageview']);
+
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+</body></html>
