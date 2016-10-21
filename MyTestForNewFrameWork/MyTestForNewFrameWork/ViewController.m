@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     [self initView];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)initView
