@@ -26,6 +26,7 @@
 
 //    [self initView];
     NSLog(@"测试提交信息是否更改");
+    NSLog(@"测试提交信息是否更改2");
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)initView
