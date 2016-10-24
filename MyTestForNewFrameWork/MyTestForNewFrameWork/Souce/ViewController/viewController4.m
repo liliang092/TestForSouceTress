@@ -8,6 +8,7 @@
 //
 
 #import "viewController4.h"
+#import "AppDelegate.h"
 #import "UIViewController+LLCustom.h"
 #import "LLBaseViewController.h"
 @implementation viewController4
@@ -25,5 +26,11 @@
 -(void)leftBtnPressed:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    AppDelegate *appdelegate= (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [appdelegate.viewContoller.myTabViewController showOrHideCustomTabaBar:YES];
 }
 @end

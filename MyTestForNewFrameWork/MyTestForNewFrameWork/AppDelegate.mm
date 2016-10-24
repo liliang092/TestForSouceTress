@@ -27,6 +27,46 @@
     self.window.rootViewController  = nav;
     [self.window makeKeyWindow];
     return YES;
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.backgroundColor = [UIColor yellowColor];
+//    [self.window makeKeyAndVisible];
+//    
+//    ViewController *viewController1 = [[ViewController alloc]init];
+//    self.viewContoller = viewController1;
+//    
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewController1];
+//    
+//    nav.navigationBar.hidden = YES;
+//    
+//    self.window.rootViewController  = nav;
+//    
+//    
+//    UIWindow *normalWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    normalWindow.backgroundColor = [UIColor blueColor];
+//    normalWindow.windowLevel = UIWindowLevelNormal;
+//    [normalWindow makeKeyAndVisible];
+//    
+//    CGRect windowRect = CGRectMake(50,
+//                                   50,
+//                                   [[UIScreen mainScreen] bounds].size.width - 100,
+//                                   [[UIScreen mainScreen] bounds].size.height - 100);
+//    UIWindow *alertLevelWindow = [[UIWindow alloc] initWithFrame:windowRect];
+//    alertLevelWindow.windowLevel = UIWindowLevelAlert;
+//    alertLevelWindow.backgroundColor = [UIColor redColor];
+//    [alertLevelWindow makeKeyAndVisible];
+//    UIViewController *alerter = [[UIViewController alloc]init];
+//    alertLevelWindow.rootViewController = alerter;
+//    
+//    UIWindow *statusLevelWindow = [[UIWindow alloc] initWithFrame:CGRectMake(0, 50, 320, 20)];
+//    statusLevelWindow.windowLevel = UIWindowLevelStatusBar;
+//    statusLevelWindow.backgroundColor = [UIColor blackColor];
+//    [statusLevelWindow makeKeyAndVisible];
+//    UIViewController *statues = [[UIViewController alloc]init];
+//    statusLevelWindow.rootViewController = statues;
+//    NSLog(@"Normal window level: %f", UIWindowLevelNormal);
+//    NSLog(@"Alert window level: %f", UIWindowLevelAlert);
+//    NSLog(@"Status window level: %f", UIWindowLevelStatusBar);
+//    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

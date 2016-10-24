@@ -62,7 +62,7 @@
 		B91CAD251D9298FE00C7F269 /* viewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = B91CAD241D9298FE00C7F269 /* viewController4.m */; };
 		B91EA2261D93645E00023291 /* LLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91EA2251D93645E00023291 /* LLBaseViewController.m */; };
 		B922D3D61D900D55002E02EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B922D3D51D900D55002E02EF /* main.m */; };
-		B922D3D91D900D55002E02EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B922D3D81D900D55002E02EF /* AppDelegate.m */; };
+		B922D3D91D900D55002E02EF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B922D3D81D900D55002E02EF /* AppDelegate.mm */; };
 		B922D3DC1D900D55002E02EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B922D3DB1D900D55002E02EF /* ViewController.m */; };
 		B922D3DF1D900D55002E02EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B922D3DD1D900D55002E02EF /* Main.storyboard */; };
 		B922D3E11D900D55002E02EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B922D3E01D900D55002E02EF /* Assets.xcassets */; };
@@ -86,6 +86,7 @@
 		B92AF96A1D911686001DAD4A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AF9691D911686001DAD4A /* ViewController2.m */; };
 		B92AF96D1D911690001DAD4A /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AF96C1D911690001DAD4A /* ViewController3.m */; };
 		B9758F9C1DABF70D00814202 /* DLBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9758F9B1DABF70D00814202 /* DLBaseNavigationController.m */; };
+		B9FCF6CF1DBB774400EF2A98 /* LLShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FCF6CE1DBB774400EF2A98 /* LLShareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -199,12 +200,13 @@
 		B919942C1D916C8A00CF3295 /* Defaultype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defaultype.h; sourceTree = "<group>"; };
 		B91CAD231D9298FE00C7F269 /* viewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewController4.h; sourceTree = "<group>"; };
 		B91CAD241D9298FE00C7F269 /* viewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewController4.m; sourceTree = "<group>"; };
+		B91DA8A61DBBBC4B0042EFBB /* Foundation_head.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foundation_head.h; sourceTree = "<group>"; };
 		B91EA2241D93645E00023291 /* LLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLBaseViewController.h; sourceTree = "<group>"; };
 		B91EA2251D93645E00023291 /* LLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLBaseViewController.m; sourceTree = "<group>"; };
 		B922D3D11D900D55002E02EF /* MyTestForNewFrameWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTestForNewFrameWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B922D3D51D900D55002E02EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B922D3D71D900D55002E02EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B922D3D81D900D55002E02EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B922D3D81D900D55002E02EF /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		B922D3DA1D900D55002E02EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B922D3DB1D900D55002E02EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B922D3DE1D900D55002E02EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -249,6 +251,9 @@
 		B92AF96C1D911690001DAD4A /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		B9758F9A1DABF70D00814202 /* DLBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseNavigationController.h; sourceTree = "<group>"; };
 		B9758F9B1DABF70D00814202 /* DLBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBaseNavigationController.m; sourceTree = "<group>"; };
+		B9FCF6CC1DBB6E7900EF2A98 /* NewFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFrame.h; sourceTree = "<group>"; };
+		B9FCF6CD1DBB774400EF2A98 /* LLShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShareView.h; sourceTree = "<group>"; };
+		B9FCF6CE1DBB774400EF2A98 /* LLShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShareView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,6 +546,8 @@
 			children = (
 				B91994221D91613E00CF3295 /* SUCustomTabbar.h */,
 				B91994231D91613E00CF3295 /* SUCustomTabbar.m */,
+				B9FCF6CD1DBB774400EF2A98 /* LLShareView.h */,
+				B9FCF6CE1DBB774400EF2A98 /* LLShareView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -581,7 +588,7 @@
 			isa = PBXGroup;
 			children = (
 				B922D3D71D900D55002E02EF /* AppDelegate.h */,
-				B922D3D81D900D55002E02EF /* AppDelegate.m */,
+				B922D3D81D900D55002E02EF /* AppDelegate.mm */,
 				B922D3DA1D900D55002E02EF /* ViewController.h */,
 				B922D3DB1D900D55002E02EF /* ViewController.m */,
 				B922D3F51D901226002E02EF /* LLFramework */,
@@ -599,6 +606,7 @@
 				B922D3E21D900D55002E02EF /* LaunchScreen.storyboard */,
 				B922D3E01D900D55002E02EF /* Assets.xcassets */,
 				B922D3D51D900D55002E02EF /* main.m */,
+				B9FCF6CC1DBB6E7900EF2A98 /* NewFrame.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -695,6 +703,7 @@
 				B922D4CF1D9017E2002E02EF /* LLHttpFormModel.h */,
 				B922D4D01D9017E2002E02EF /* LLHttpFormModel.m */,
 				B922D4AF1D90148B002E02EF /* extension */,
+				B91DA8A61DBBBC4B0042EFBB /* Foundation_head.h */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -764,6 +773,7 @@
 				TargetAttributes = {
 					B922D3D01D900D55002E02EF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ATZGP7HG6Y;
 					};
 				};
 			};
@@ -843,7 +853,7 @@
 				B919941B1D91610800CF3295 /* DLXMLDictionary.m in Sources */,
 				B91994151D91610800CF3295 /* SVProgressGifHUD.m in Sources */,
 				B91993F21D91610800CF3295 /* DLPinyin.c in Sources */,
-				B922D3D91D900D55002E02EF /* AppDelegate.m in Sources */,
+				B922D3D91D900D55002E02EF /* AppDelegate.mm in Sources */,
 				B922D4CA1D90153D002E02EF /* LLLog.m in Sources */,
 				B922D4C11D90148B002E02EF /* NSData+MD5.m in Sources */,
 				B91994191D91610800CF3295 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -853,6 +863,7 @@
 				B91993F91D91610800CF3295 /* SBJsonStreamWriter.m in Sources */,
 				B919940C1D91610800CF3295 /* UIAlertView+AFNetworking.m in Sources */,
 				B922D4C71D90148B002E02EF /* UIImage+DLExtension.m in Sources */,
+				B9FCF6CF1DBB774400EF2A98 /* LLShareView.m in Sources */,
 				B91994061D91610800CF3295 /* AFURLRequestSerialization.m in Sources */,
 				B91993F41D91610800CF3295 /* SBJsonParser.m in Sources */,
 				B91993EF1D91610800CF3295 /* DLUserDefaults.m in Sources */,
@@ -921,7 +932,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sishen92@icloud.com (6VA3S9MD3U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sishen92@icloud.com (6VA3S9MD3U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -966,7 +978,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sishen92@icloud.com (6VA3S9MD3U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 亮 李 (78244YZ6J5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -991,9 +1004,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ATZGP7HG6Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTestForNewFrameWork/NewFrame.h";
 				INFOPLIST_FILE = MyTestForNewFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leiyu.liliang.MyTestForNewFrameWork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalworld.mewoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1002,9 +1018,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sishen92@icloud.com (6VA3S9MD3U)";
+				DEVELOPMENT_TEAM = ATZGP7HG6Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyTestForNewFrameWork/NewFrame.h";
 				INFOPLIST_FILE = MyTestForNewFrameWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leiyu.liliang.MyTestForNewFrameWork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magicalworld.mewoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

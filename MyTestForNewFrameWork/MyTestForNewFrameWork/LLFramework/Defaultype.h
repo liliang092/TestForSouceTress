@@ -15,7 +15,7 @@
 #define DeviceVersion [[UIDevice currentDevice].systemVersion doubleValue]
 
 #define NavigationBarHeight 48
-#define TabBarHeight 60
+#define TabBarHeight 49
 #define KHost @"http://api.dhqcsc.com"
 #define KH5Host @"http://m.dhqcsc.com"//正式t
 
@@ -140,6 +140,6 @@
 #define MillisecondsOfDay       (24.f * 60.f * 60.f * 1000.f)
 /** 毫秒数 */
 #define Milliseconds(Days)      (24.f * 60.f * 60.f * 1000.f * (Days))
-
+#import "Foundation_head.h"
 
 #endif /* Defaultype_h */

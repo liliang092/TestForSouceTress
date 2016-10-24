@@ -22,9 +22,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
     [self initView];
-    
 
-    [self initView];
     NSLog(@"测试提交信息是否更改");
 //<<<<<<< HEAD
     NSLog(@"测试提交信息是否更改2");
