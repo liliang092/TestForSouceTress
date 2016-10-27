@@ -39,32 +39,32 @@
 }
 -(void)myClickAction
 {
-//    LLShareView *share = [[LLShareView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
-//    [share addIconItem:@"QQ" withIcon:@"QQ分享"];
-//    [share addIconItem:@"微信" withIcon:@"微信分享"];
-//    [share addIconItem:@"微博" withIcon:@"微博分享"];
-//    [share updateData];
-//    share.block = ^(NSInteger tag)
-//    {
-//        switch (tag) {
-//            case 0:
-//            {
-//                NSLog(@"取消分享");
-//            }
-//                break;
-//            case 1:
-//            {
-//                NSLog(@"微信分享");
-//            }
-//            case 2:
-//            {
-//                NSLog(@"微博分享");
-//            }
-//            default:
-//                break;
-//        }
-//    };
-//    [share showInView];
+    LLShareView *share = [[LLShareView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+    [share addIconItem:@"QQ分享" withIcon:@"QQ分享"];
+    [share addIconItem:@"微信分享" withIcon:@"微信分享"];
+    [share addIconItem:@"微博分享" withIcon:@"微博分享"];
+    [share updateData];
+    share.block = ^(NSInteger tag)
+    {
+        switch (tag) {
+            case 0:
+            {
+                NSLog(@"取消分享");
+            }
+                break;
+            case 1:
+            {
+                NSLog(@"微信分享");
+            }
+            case 2:
+            {
+                NSLog(@"微博分享");
+            }
+            default:
+                break;
+        }
+    };
+    [share showInView];
     viewController4 *view = [[viewController4 alloc]init];
 //    [self.tabBarController setHidesBottomBarWhenPushed:YES];
     [APPDELEGATE.viewContoller.myTabViewController showOrHideCustomTabaBar:NO];
