@@ -86,6 +86,12 @@
 		B92AF96A1D911686001DAD4A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AF9691D911686001DAD4A /* ViewController2.m */; };
 		B92AF96D1D911690001DAD4A /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = B92AF96C1D911690001DAD4A /* ViewController3.m */; };
 		B9758F9C1DABF70D00814202 /* DLBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9758F9B1DABF70D00814202 /* DLBaseNavigationController.m */; };
+		B97DAFE21DC5D8DC00CEF142 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DAFE11DC5D8DC00CEF142 /* TestClass.m */; };
+		B97DAFE61DC62B9200CEF142 /* LLShowNeesLogInView.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DAFE51DC62B9200CEF142 /* LLShowNeesLogInView.m */; };
+		B97DAFED1DC6456E00CEF142 /* TTReqEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DAFE81DC6456E00CEF142 /* TTReqEngine.m */; };
+		B97DAFEE1DC6456E00CEF142 /* TTReqProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DAFEA1DC6456E00CEF142 /* TTReqProtocol.m */; };
+		B97DAFEF1DC6456E00CEF142 /* TTReqUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DAFEC1DC6456E00CEF142 /* TTReqUrl.m */; };
+		B97DAFF21DC6470500CEF142 /* LLBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B97DAFF11DC6470500CEF142 /* LLBaseDataModel.m */; };
 		B9FCF6CF1DBB774400EF2A98 /* LLShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FCF6CE1DBB774400EF2A98 /* LLShareView.m */; };
 /* End PBXBuildFile section */
 
@@ -251,6 +257,18 @@
 		B92AF96C1D911690001DAD4A /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		B9758F9A1DABF70D00814202 /* DLBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLBaseNavigationController.h; sourceTree = "<group>"; };
 		B9758F9B1DABF70D00814202 /* DLBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLBaseNavigationController.m; sourceTree = "<group>"; };
+		B97DAFE01DC5D8DC00CEF142 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		B97DAFE11DC5D8DC00CEF142 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		B97DAFE41DC62B9200CEF142 /* LLShowNeesLogInView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShowNeesLogInView.h; sourceTree = "<group>"; };
+		B97DAFE51DC62B9200CEF142 /* LLShowNeesLogInView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShowNeesLogInView.m; sourceTree = "<group>"; };
+		B97DAFE71DC6456E00CEF142 /* TTReqEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTReqEngine.h; sourceTree = "<group>"; };
+		B97DAFE81DC6456E00CEF142 /* TTReqEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTReqEngine.m; sourceTree = "<group>"; };
+		B97DAFE91DC6456E00CEF142 /* TTReqProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTReqProtocol.h; sourceTree = "<group>"; };
+		B97DAFEA1DC6456E00CEF142 /* TTReqProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTReqProtocol.m; sourceTree = "<group>"; };
+		B97DAFEB1DC6456E00CEF142 /* TTReqUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTReqUrl.h; sourceTree = "<group>"; };
+		B97DAFEC1DC6456E00CEF142 /* TTReqUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTReqUrl.m; sourceTree = "<group>"; };
+		B97DAFF01DC6470500CEF142 /* LLBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLBaseDataModel.h; sourceTree = "<group>"; };
+		B97DAFF11DC6470500CEF142 /* LLBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLBaseDataModel.m; sourceTree = "<group>"; };
 		B9FCF6CC1DBB6E7900EF2A98 /* NewFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewFrame.h; sourceTree = "<group>"; };
 		B9FCF6CD1DBB774400EF2A98 /* LLShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLShareView.h; sourceTree = "<group>"; };
 		B9FCF6CE1DBB774400EF2A98 /* LLShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLShareView.m; sourceTree = "<group>"; };
@@ -544,6 +562,8 @@
 		B91993E81D91610800CF3295 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B97DAFE41DC62B9200CEF142 /* LLShowNeesLogInView.h */,
+				B97DAFE51DC62B9200CEF142 /* LLShowNeesLogInView.m */,
 				B91994221D91613E00CF3295 /* SUCustomTabbar.h */,
 				B91994231D91613E00CF3295 /* SUCustomTabbar.m */,
 				B9FCF6CD1DBB774400EF2A98 /* LLShareView.h */,
@@ -641,6 +661,8 @@
 		B922D3F01D900F35002E02EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B97DAFE01DC5D8DC00CEF142 /* TestClass.h */,
+				B97DAFE11DC5D8DC00CEF142 /* TestClass.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -648,6 +670,12 @@
 		B922D3F11D900F35002E02EF /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				B97DAFE71DC6456E00CEF142 /* TTReqEngine.h */,
+				B97DAFE81DC6456E00CEF142 /* TTReqEngine.m */,
+				B97DAFE91DC6456E00CEF142 /* TTReqProtocol.h */,
+				B97DAFEA1DC6456E00CEF142 /* TTReqProtocol.m */,
+				B97DAFEB1DC6456E00CEF142 /* TTReqUrl.h */,
+				B97DAFEC1DC6456E00CEF142 /* TTReqUrl.m */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -734,6 +762,8 @@
 		B92AF9611D910ACA001DAD4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B97DAFF01DC6470500CEF142 /* LLBaseDataModel.h */,
+				B97DAFF11DC6470500CEF142 /* LLBaseDataModel.m */,
 				B92AF9621D910ACA001DAD4A /* LLCustonTabbarModel.h */,
 				B92AF9631D910ACA001DAD4A /* LLCustonTabbarModel.m */,
 				B91994291D9164B400CF3295 /* LLCustomNavBarView.h */,
@@ -824,6 +854,8 @@
 				B91993FF1D91610800CF3295 /* NSString+MD5.m in Sources */,
 				B922D4C01D90148B002E02EF /* NSArray+DLExtension.m in Sources */,
 				B922D4D41D901B1D002E02EF /* DLSystemInfo.m in Sources */,
+				B97DAFE61DC62B9200CEF142 /* LLShowNeesLogInView.m in Sources */,
+				B97DAFED1DC6456E00CEF142 /* TTReqEngine.m in Sources */,
 				B91993EE1D91610800CF3295 /* DLKeychain.m in Sources */,
 				B922D3DC1D900D55002E02EF /* ViewController.m in Sources */,
 				B92AF96D1D911690001DAD4A /* ViewController3.m in Sources */,
@@ -846,6 +878,7 @@
 				B922D4A41D901357002E02EF /* LLObejctDefine.m in Sources */,
 				B91CAD251D9298FE00C7F269 /* viewController4.m in Sources */,
 				B91994211D91610800CF3295 /* UITabBarController+Custom.m in Sources */,
+				B97DAFEE1DC6456E00CEF142 /* TTReqProtocol.m in Sources */,
 				B91993ED1D91610800CF3295 /* DLCache.m in Sources */,
 				B91994241D91613E00CF3295 /* SUCustomTabbar.m in Sources */,
 				B919941A1D91610800CF3295 /* UIView+Animation.m in Sources */,
@@ -854,7 +887,9 @@
 				B919941B1D91610800CF3295 /* DLXMLDictionary.m in Sources */,
 				B91994151D91610800CF3295 /* SVProgressGifHUD.m in Sources */,
 				B91993F21D91610800CF3295 /* DLPinyin.c in Sources */,
+				B97DAFF21DC6470500CEF142 /* LLBaseDataModel.m in Sources */,
 				B922D3D91D900D55002E02EF /* AppDelegate.mm in Sources */,
+				B97DAFE21DC5D8DC00CEF142 /* TestClass.m in Sources */,
 				B922D4CA1D90153D002E02EF /* LLLog.m in Sources */,
 				B922D4C11D90148B002E02EF /* NSData+MD5.m in Sources */,
 				B91994191D91610800CF3295 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -883,6 +918,7 @@
 				B91994131D91610800CF3295 /* AsyncUdpSocket.m in Sources */,
 				B91993FA1D91610800CF3295 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				B92AF9671D91167B001DAD4A /* ViewController1.m in Sources */,
+				B97DAFEF1DC6456E00CEF142 /* TTReqUrl.m in Sources */,
 				B91994021D91610800CF3295 /* AFHTTPSessionManager.m in Sources */,
 				B91993F61D91610800CF3295 /* SBJsonStreamParserAccumulator.m in Sources */,
 				B91994111D91610800CF3295 /* UIWebView+AFNetworking.m in Sources */,
